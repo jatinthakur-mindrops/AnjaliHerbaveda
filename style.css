@@ -194,6 +194,7 @@
 
 .texts p {
     display: none;
+    margin-left: 21vw;
 }
 
 .texts p.active {
@@ -206,4 +207,15 @@
     color: white !important;
     background-color: #be8f65;
 
+}
+
+.btnn {
+    cursor: pointer;
+    background-color: #2e120f;
+    color: #fff;
+}
+
+.btnn:hover {
+    background-color: #2e120f;
+    color: #fff;
 }
