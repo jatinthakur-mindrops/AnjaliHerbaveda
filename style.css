@@ -226,3 +226,32 @@
     fill: #000;
     /* Default fill color */
 }
+
+
+
+@media (max-width: 768px) {
+    .left {
+        width: 100vw !important;
+    }
+
+    .fs {
+        margin-left: -6vw !important;
+
+    }
+
+    .left-item {
+        width: 100vw !important;
+        height: 50vw;
+    }
+
+    .right {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .three-text {
+        display: flex !important;
+        justify-content: space-around !important;
+        width: 50vh;
+    }
+}
