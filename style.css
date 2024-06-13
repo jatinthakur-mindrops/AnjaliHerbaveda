@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+.left {
+    width: 50vw;
+}
+
 .left-item {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -22,7 +26,7 @@
     height: 90px;
     font-size: larger;
     padding-inline: 10px;
-
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .item-div {
@@ -49,14 +53,14 @@
 
 .contact-button:hover {
     color: white;
-    background-color: #be8f65;
+    background-color: #B68769;
     border: 1px solid white;
 }
 
 .top {
     margin-top: 90px;
     display: flex;
-    background-color: #be8f65;
+    background-color: #B68769;
     height: calc(100vh - 100px);
 }
 
@@ -101,6 +105,23 @@
 
 }
 
+.light-bg {
+    top: -176vh;
+    background-color: #FEECD4;
+    margin: 0 0 0 20vh;
+    height: 100vh;
+    position: relative;
+}
+
+.bg {
+    z-index: 1;
+    left: 18vh;
+    position: relative;
+    width: 25%;
+    height: 27%;
+    background-color: #B68769;
+    bottom: 28vh;
+}
 
 .listitems {
     margin-right: 3vw !important;
@@ -111,14 +132,57 @@
 }
 
 .mdl1 {
-
+    position: relative;
     margin-left: auto;
-    height: 20%;
+    /* height: 20%; */
+    top: 24vh;
+    z-index: 1;
     width: 35%;
 }
 
 .mdl1 img {
     height: auto;
+    max-width: 100%;
+}
+
+.mdl2 {
+    top: -100vh;
+    width: 25%;
+    left: 25vh;
+    position: relative;
+    z-index: 2;
+}
+
+.mdl2 img {
+    max-width: 100%;
+}
+
+.product1 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 50vh;
+    z-index: 2;
+    top: 2vh;
+    margin-left: auto;
+    position: relative;
+    height: 50vh;
+    max-width: 18%;
+}
+
+.product1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.product2 {
+
+    width: 18%;
+    position: relative;
+    z-index: 3;
+    top: -118vh;
+    left: 54vh;
+}
+
+.product2 img {
     max-width: 100%;
 }
 
@@ -232,6 +296,8 @@
 @media (max-width: 768px) {
     .left {
         width: 100vw !important;
+        height: 100vw !important;
+
     }
 
     .fs {
@@ -241,12 +307,11 @@
 
     .left-item {
         width: 100vw !important;
-        height: 50vw;
     }
 
     .right {
         width: 100vw;
-        height: 50vw;
+        height: 100vw;
     }
 
     .three-text {
