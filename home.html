@@ -237,20 +237,45 @@
         setInterval(showNextText, 3000);
       });
 
-      // script.js
+      //image
       document.addEventListener("DOMContentLoaded", () => {
         const scanningContainers = document.querySelectorAll(
           ".scanning-container .image"
         );
+        const interval = 3000; // Time interval for each image animation
+
         let delay = 0; // Initial delay before the first image starts animating
 
-        scanningContainers.forEach((image, index) => {
+        function animateImages() {
+          scanningContainers.forEach((image, index) => {
+            setTimeout(() => {
+              image.classList.add("scale-up");
+            }, delay);
+            delay += interval; // Increase the delay for the next image
+          });
+
+          // Reset the images 3 seconds after the last image has appeared
           setTimeout(() => {
-            image.classList.add("scale-up");
-            image.style.right = "0";
+            resetImages();
           }, delay);
-          delay += 2500; // Increase the delay for the next image
-        });
+        }
+
+        function resetImages() {
+          scanningContainers.forEach((image) => {
+            image.classList.remove("scale-up");
+            image.style.right = "107%";
+            image.style.visibility = "hidden";
+          });
+
+          // Reapply the animation after a short delay to create the endless loop effect
+          delay = 0;
+          setTimeout(() => {
+            animateImages();
+          }, 0);
+        }
+
+        // Initial call to start the animation
+        animateImages();
       });
     </script>
   </body>
