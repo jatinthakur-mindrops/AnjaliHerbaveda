@@ -101,7 +101,7 @@
 
 
 .model {
-    height: calc(290vh - 270px);
+    height: 360vh;
     background-color: #FEECD4;
 
 }
@@ -113,9 +113,9 @@
     left: 16vh;
     position: relative;
     width: 29%;
-    height: 23%;
+    height: 16%;
     background-color: #B68769;
-    bottom: 50vh;
+    bottom: 45vh;
 }
 
 .listitems {
@@ -141,18 +141,44 @@
 }
 
 .mdl2 {
-    top: -135vh;
-    width: 28%;
+    width: 36%;
+}
+
+.mdl2 img {
+    top: -127vh;
     left: 25vh;
+    max-width: 100%;
     position: relative;
     z-index: 2;
 }
 
-.mdl2 img {
-    max-width: 100%;
+.mdl3 {
+    position: relative;
+    margin-left: auto;
+    z-index: 2;
+    max-width: 25%;
+}
+
+.mdl3 img {
+    width: 100%;
+    position: relative;
+    bottom: 150vh;
+    right: 25vh;
+}
+
+.mdl4 {
+    width: 30%;
+}
+
+.mdl4 img {
+    position: relative;
+    bottom: 215vh;
+    width: 100%;
+    left: 10vh;
 }
 
 .product1 {
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 50vh;
     z-index: 2;
@@ -166,6 +192,7 @@
 .product1 img {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .carousel {
@@ -185,11 +212,13 @@
 }
 
 .product2 img {
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
+    border-radius: 10px;
+
     transition: opacity 0.5s ease;
 }
 
@@ -227,17 +256,98 @@
 
 
 .product2 {
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 16%;
+    width: 19%;
     position: relative;
     z-index: 3;
-    top: -154vh;
-    left: 64vh;
-    height: 46vh;
+    top: -145vh;
+    border-radius: 10px;
+    left: 75vh;
+    height: 40vh;
 }
 
-.product2 img {
+
+
+.product3 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 50vh;
+    z-index: 2;
+    bottom: 175vh;
+    right: 10vh;
+    margin-left: auto;
+    position: relative;
+    height: 50vh;
+    max-width: 18%;
+    border-radius: 10px;
+}
+
+.product3 img {
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.product3 .image1 {
+    opacity: 1;
+}
+
+.product3 .image2 {
+    opacity: 0;
+}
+
+.product3:hover .image1 {
+    opacity: 0;
+}
+
+.product3:hover .image2 {
+    opacity: 1;
+}
+
+
+.product4 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    z-index: 2;
+
+    left: 50vh;
+    bottom: 235vh;
+    position: relative;
+    height: 46vh;
+    max-width: 15%;
+    border-radius: 10px;
+}
+
+.product4 img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.product4 .image1 {
+    opacity: 1;
+}
+
+.product4 .image2 {
+    opacity: 0;
+}
+
+.product4:hover .image1 {
+    opacity: 0;
+}
+
+.product4:hover .image2 {
+    opacity: 1;
 }
 
 .treat {
@@ -246,11 +356,42 @@
     font-weight: 400;
     font-style: normal;
     font-size: 12vh;
-    left: 145vh;
-    bottom: 70vh;
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
+    top: -80vh;
+    left: 45vh;
+    color: saddlebrown;
+}
+
+.maintain {
+    position: relative;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    left: 145vh;
+    bottom: 78vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
+    color: saddlebrown;
+
+}
+
+.protect {
+    position: relative;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
+    bottom: 237vh;
+    left: 45vh;
+    color: saddlebrown;
+
 }
 
 .container {
