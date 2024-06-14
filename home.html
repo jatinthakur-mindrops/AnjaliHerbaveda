@@ -24,7 +24,7 @@
         <div class="container-fluid">
           <div class="logo">
             <a class="navbar-brand" href="#"
-              ><img src="logo-ah.png" alt=""
+              ><img src="logo-ah (1).png" alt="" style="height: 11vh"
             /></a>
           </div>
           <button
@@ -91,14 +91,18 @@
       <div class="left text-white">
         <div class="left-item mt-5">
           <div class="fs">
-            <p class="ms-5 fw-bold">Check Out Now</p>
-            <p class="ms-5 fw-bold">Our Latest Products</p>
+            <div class="centerit d-flex justify-content-center">
+              <p class="fw-bold">Check Out Now</p>
+            </div>
+            <div class="centerit d-flex justify-content-center">
+              <p class="fw-bold">Our Latest Products</p>
+            </div>
           </div>
           <div class="texts d-flex justify-content-center me-5">
-            <p class="fs1 text fst-italic">Hair Oil !</p>
-            <p class="fs1 text fst-italic">Facewash !</p>
-            <p class="fs1 text fst-italic">Hair Cleanser !</p>
-            <p class="fs1 active text fst-italic">Aloevera Gel !</p>
+            <p class="fs1 text fst-italic">Hair Oil</p>
+            <p class="fs1 text fst-italic">Facewash</p>
+            <p class="fs1 text fst-italic">Hair Cleanser</p>
+            <p class="fs1 active text fst-italic">Aloevera Gel</p>
           </div>
 
           <div class="d-flex justify-content-around mt-5 fs-3 three-text">
@@ -108,25 +112,24 @@
           </div>
         </div>
       </div>
-      <div class="right slideshow-contianer">
-        <div class="slider-wrapper">
-          <div class="slider">
+      <div class="right">
+        <div class="container">
+          <div class="scanning-container">
             <img
-              class="slide active"
               src="aloe pro (1).jpg"
               alt=""
-              id="slide-1"
+              class="image"
               style="object-fit: cover"
             />
-            <img class="slide" src="oil pro.JPG" alt="" id="slide-2" />
-            <img class="slide" src="face pro.JPG" alt="" id="slide-3" />
-            <img class="slide" src="cleanser pro.JPG" alt="" id="slide-4" />
           </div>
-          <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
+          <div class="scanning-container">
+            <img src="oil pro.JPG" alt="" class="image" />
+          </div>
+          <div class="scanning-container">
+            <img src="face pro.JPG" alt="" class="image" />
+          </div>
+          <div class="scanning-container">
+            <img src="cleanser pro.JPG" alt="" class="image" />
           </div>
         </div>
       </div>
@@ -134,17 +137,28 @@
 
     <div class="model">
       <div class="mdl1">
-        <img src="oil2.JPG" alt="" />
+        <img src="face3.png" alt="" />
       </div>
-      <div class="product1">
-        <img src="oil pro1.jpg" alt="" />
+      <div class="carousel">
+        <div class="product1">
+          <img src="face pro.png" alt="Face Pro" class="image1" />
+          <img src="faceing.png" alt="Face Pro Hover" class="image2" />
+        </div>
       </div>
       <div class="bg"></div>
+      <div class="treat">Treat...</div>
       <div class="mdl2">
-        <img src="cleanser4.JPG" alt="" />
+        <img src="oil2.png" alt="" />
       </div>
-      <div class="product2">
-        <img src="cleanser pro1.JPG" alt="" />
+      <div class="carousel">
+        <div class="product2">
+          <img src="oil pro.png" alt="" class="image1" />
+          <img src="oiling.png" alt="" class="image2" />
+        </div>
+      </div>
+
+      <div class="mdl3">
+        <img src="" alt="" />
       </div>
     </div>
     <div class="light-bg"></div>
@@ -162,42 +176,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".slide");
-        const navLinks = document.querySelectorAll(".slider-nav a");
-        let currentIndex = 0;
-        const slideInterval = 3000; // 3 seconds
-
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            slide.style.transform = `translateX(${-index * 100}%)`;
-            navLinks[i].classList.toggle("active", i === index);
-          });
-        }
-
-        function nextSlide() {
-          currentIndex++; // Increment currentIndex
-          if (currentIndex === slides.length) {
-            currentIndex = 0; // Reset to 0 when reaching the end
-          }
-          showSlide(currentIndex);
-        }
-
-        setInterval(nextSlide, slideInterval);
-
-        navLinks.forEach((link, index) => {
-          link.addEventListener("click", (e) => {
-            e.preventDefault();
-            currentIndex = index;
-            showSlide(currentIndex);
-          });
-        });
-
-        showSlide(currentIndex);
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
         const texts = document.querySelectorAll(".texts p");
         let index = 0;
 
@@ -211,6 +189,22 @@
         }
 
         setInterval(showNextText, 3000);
+      });
+
+      // script.js
+      document.addEventListener("DOMContentLoaded", () => {
+        const scanningContainers = document.querySelectorAll(
+          ".scanning-container .image"
+        );
+        let delay = 0; // Initial delay before the first image starts animating
+
+        scanningContainers.forEach((image, index) => {
+          setTimeout(() => {
+            image.classList.add("scale-up");
+            image.style.right = "0";
+          }, delay);
+          delay += 2500; // Increase the delay for the next image
+        });
       });
     </script>
   </body>

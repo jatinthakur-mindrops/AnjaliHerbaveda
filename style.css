@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,700;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -78,13 +80,12 @@
     /* To ensure the image doesn't overflow the div */
 }
 
-.right img {
+/* .right img {
     width: 50%;
     height: calc(100vh - 90px);
     object-fit: cover;
+    }
     /* To maintain aspect ratio and cover the div */
-}
-
 
 .fs {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
@@ -100,27 +101,27 @@
 
 
 .model {
-    padding-top: 5vw;
     height: calc(290vh - 270px);
 
 }
 
 .light-bg {
-    top: -176vh;
+    top: -200vh;
     background-color: #FEECD4;
     margin: 0 0 0 20vh;
-    height: 100vh;
+    height: calc(290vh - 270px);
+
     position: relative;
 }
 
 .bg {
     z-index: 1;
-    left: 18vh;
+    left: 16vh;
     position: relative;
-    width: 25%;
-    height: 27%;
+    width: 29%;
+    height: 23%;
     background-color: #B68769;
-    bottom: 28vh;
+    bottom: 35vh;
 }
 
 .listitems {
@@ -135,7 +136,7 @@
     position: relative;
     margin-left: auto;
     /* height: 20%; */
-    top: 24vh;
+    top: 10vh;
     z-index: 1;
     width: 35%;
 }
@@ -146,8 +147,8 @@
 }
 
 .mdl2 {
-    top: -100vh;
-    width: 25%;
+    top: -120vh;
+    width: 28%;
     left: 25vh;
     position: relative;
     z-index: 2;
@@ -161,7 +162,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 50vh;
     z-index: 2;
-    top: 2vh;
+    top: -12vh;
     margin-left: auto;
     position: relative;
     height: 50vh;
@@ -173,68 +174,139 @@
     width: 100%;
 }
 
-.product2 {
+.carousel {
+    position: relative;
+    max-width: 100%;
 
-    width: 18%;
+
+}
+
+.product1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.product2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.product1 .image1 {
+    opacity: 1;
+}
+
+.product1 .image2 {
+    opacity: 0;
+}
+
+.product1:hover .image1 {
+    opacity: 0;
+}
+
+.product1:hover .image2 {
+    opacity: 1;
+}
+
+.product2 .image1 {
+    opacity: 1;
+}
+
+.product2 .image2 {
+    opacity: 0;
+}
+
+.product2:hover .image1 {
+    opacity: 0;
+}
+
+.product2:hover .image2 {
+    opacity: 1;
+}
+
+
+.product2 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 16%;
     position: relative;
     z-index: 3;
-    top: -118vh;
-    left: 54vh;
+    top: -140vh;
+    left: 64vh;
+    height: 46vh;
 }
 
 .product2 img {
     max-width: 100%;
 }
 
-.slideshow-container {
-    max-width: 50%;
-    margin-left: auto;
-
-}
-
-.slider-wrapper {
+.treat {
     position: relative;
-    max-width: 100%;
-    margin: 0 auto;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    left: 145vh;
+    bottom: 45vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
 }
 
-.slider {
-    overflow-x: hidden;
-    display: flex;
+.container {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
-.slider img {
-    width: 50vw;
-    flex: 1 0 100%;
-    scroll-snap-align: end;
-    object-fit: fill;
-    transition: transform 1s ease;
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
+.scanning-container {
     position: absolute;
-    bottom: 1.25rem;
-    left: -50%;
-    transform: translateX(50%);
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
 }
 
-.slider-nav a {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #000;
-    display: inline-block;
+.image {
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: right 1s ease-in-out;
 }
 
-.slider-nav a.active {
-    background: #fff;
-}
+/* .scale-up {
+    animation: scale-up .5s ease-in;
+} */
 
+@keyframes scale-up {
+    0% {
+        transform: scale(1.5);
+
+    }
+
+    25% {
+        transform: scale();
+    }
+
+    50% {
+        transform: scale(0.4);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+
+}
 
 @keyframes pop {
     0% {
