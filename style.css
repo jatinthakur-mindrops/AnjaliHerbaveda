@@ -101,7 +101,7 @@
 
 
 .model {
-    height: 360vh;
+    height: 550vh;
     background-color: #FEECD4;
 
 }
@@ -175,6 +175,28 @@
     bottom: 215vh;
     width: 100%;
     left: 10vh;
+}
+
+.mdl5 {
+    width: 30%;
+}
+
+.mdl5 img {
+    position: relative;
+    width: 100%;
+    left: 120vh;
+    bottom: 250vh;
+}
+
+.mdl6 {
+    width: 30%;
+}
+
+.mdl6 img {
+    position: relative;
+    width: 100%;
+    left: 30vh;
+    bottom: 282vh
 }
 
 .product1 {
@@ -313,9 +335,7 @@
 .product4 {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
     z-index: 2;
-
     left: 50vh;
     bottom: 235vh;
     position: relative;
@@ -350,6 +370,84 @@
     opacity: 1;
 }
 
+
+.product5 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+    left: 162vh;
+    bottom: 277vh;
+    position: relative;
+    height: 42vh;
+    max-width: 17%;
+    border-radius: 10px;
+}
+
+.product5 img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.product5 .image1 {
+    opacity: 1;
+}
+
+.product5 .image2 {
+    opacity: 0;
+}
+
+.product5:hover .image1 {
+    opacity: 0;
+}
+
+.product5:hover .image2 {
+    opacity: 1;
+}
+
+.product6 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+    left: 20vh;
+    bottom: 300vh;
+    position: relative;
+    height: 42vh;
+    max-width: 16%;
+    border-radius: 10px;
+}
+
+.product6 img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    transition: opacity 0.6s ease;
+}
+
+.product6 .image1 {
+    opacity: 1;
+}
+
+.product6 .image2 {
+    opacity: 0;
+}
+
+.product6:hover .image1 {
+    opacity: 0;
+}
+
+.product6:hover .image2 {
+    opacity: 1;
+}
+
+
 .treat {
     position: relative;
     font-family: "Alex Brush", cursive;
@@ -360,7 +458,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     top: -80vh;
-    left: 45vh;
+    left: 35vh;
     color: saddlebrown;
 }
 
@@ -370,7 +468,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 12vh;
-    left: 145vh;
+    left: 135vh;
     bottom: 78vh;
     z-index: 4;
     display: inline-block;
@@ -389,9 +487,50 @@
     display: inline-block;
     transform: rotate(-20deg);
     bottom: 237vh;
-    left: 45vh;
+    left: 35vh;
     color: saddlebrown;
 
+}
+
+.jadi {
+    position: relative;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
+    color: saddlebrown;
+    left: 115vh;
+    bottom: 280vh;
+}
+
+.saffron {
+    position: relative;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
+    color: saddlebrown;
+    bottom: 327vh;
+}
+
+.banana {
+    position: relative;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vh;
+    z-index: 4;
+    display: inline-block;
+    transform: rotate(-20deg);
+    color: saddlebrown;
+    bottom: 360vh;
+    left: 90vh;
 }
 
 .container {
@@ -482,8 +621,10 @@
 
 .btnn {
     cursor: pointer;
-    background-color: #2e120f;
+
     color: #fff;
+    background: rgb(154, 111, 88);
+    background: linear-gradient(111deg, rgba(154, 111, 88, 1) 34%, rgba(84, 48, 30, 1) 50%);
 }
 
 .btnn:hover {
