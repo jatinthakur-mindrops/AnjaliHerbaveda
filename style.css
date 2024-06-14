@@ -62,7 +62,7 @@
 .top {
     margin-top: 90px;
     display: flex;
-    background-color: #B68769;
+    background-color: #EBC196;
     height: calc(100vh - 100px);
 }
 
@@ -102,17 +102,11 @@
 
 .model {
     height: calc(290vh - 270px);
-
-}
-
-.light-bg {
-    top: -200vh;
     background-color: #FEECD4;
-    margin: 0 0 0 20vh;
-    height: calc(290vh - 270px);
 
-    position: relative;
 }
+
+
 
 .bg {
     z-index: 1;
@@ -121,7 +115,7 @@
     width: 29%;
     height: 23%;
     background-color: #B68769;
-    bottom: 35vh;
+    bottom: 50vh;
 }
 
 .listitems {
@@ -136,7 +130,7 @@
     position: relative;
     margin-left: auto;
     /* height: 20%; */
-    top: 10vh;
+
     z-index: 1;
     width: 35%;
 }
@@ -147,7 +141,7 @@
 }
 
 .mdl2 {
-    top: -120vh;
+    top: -135vh;
     width: 28%;
     left: 25vh;
     position: relative;
@@ -162,7 +156,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 50vh;
     z-index: 2;
-    top: -12vh;
+    top: -25vh;
     margin-left: auto;
     position: relative;
     height: 50vh;
@@ -237,7 +231,7 @@
     width: 16%;
     position: relative;
     z-index: 3;
-    top: -140vh;
+    top: -154vh;
     left: 64vh;
     height: 46vh;
 }
@@ -253,7 +247,7 @@
     font-style: normal;
     font-size: 12vh;
     left: 145vh;
-    bottom: 45vh;
+    bottom: 70vh;
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
