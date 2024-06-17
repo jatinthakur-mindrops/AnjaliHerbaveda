@@ -142,7 +142,7 @@
         </div>
       </div>
     </div>
-
+    <!---------------------MODELS------------------------>
     <div class="model">
       <div class="mdl1">
         <img src="face3.png" alt="" />
@@ -150,7 +150,11 @@
       <div class="carousel">
         <div class="product1">
           <img src="face pro.png" alt="Face Pro" class="image1" />
-          <img src="manjishtha.png" alt="Face Pro Hover" class="image2" />
+          <img
+            src="facewash benefits.png"
+            alt="Face Pro Hover"
+            class="image2"
+          />
         </div>
       </div>
       <div class="treat">Manjishtha...</div>
@@ -162,7 +166,12 @@
       <div class="carousel">
         <div class="product2">
           <img src="aloe white.png" alt="" class="image1" />
-          <img src="alovera.png" alt="" class="image2" />
+          <img
+            src="aloevera gel benefits.png"
+            alt=""
+            class="image2"
+            style="width: 86%"
+          />
         </div>
       </div>
 
@@ -172,7 +181,7 @@
       <div class="carousel">
         <div class="product3">
           <img src="cleanser pro white.png" alt="" class="image1" />
-          <img src="panchamriy.png" alt="" class="image2" />
+          <img src="hair cleanser benefits.png" alt="" class="image2" />
         </div>
       </div>
       <div class="protect">Panch Amrit...</div>
@@ -182,30 +191,69 @@
       <div class="carousel">
         <div class="product4">
           <img src="oil pro.png" alt="" class="image1" />
-          <img src="oiling.png" alt="" class="image2" />
+          <img src="hair oil benefitd.png" alt="" class="image2" />
         </div>
       </div>
       <div class="jadi">Jadi Booti...</div>
       <div class="mdl5">
-        <img src="serum mdl.png" alt="" />
-      </div>
-      <div class="carousel">
-        <div class="product5">
-          <img src="serum white.png" alt="" class="image1" />
-          <img src="face serum.png" alt="" class="image2" />
-        </div>
-      </div>
-      <div class="saffron">Saffron Touch And Glow...</div>
-      <div class="mdl6">
         <img src="pack 6.JPG" alt="" />
       </div>
       <div class="carousel">
-        <div class="product6">
+        <div class="product5">
           <img src="pack pro white.png" alt="" class="image1" />
-          <img src="mask.png" alt="" class="image2" />
+          <img
+            src="hair pack benefits.png"
+            alt=""
+            class="image2"
+            style="width: 90%"
+          />
         </div>
       </div>
       <div class="banana">Banana Therapy Regrowth...</div>
+      <div class="mdl6">
+        <img src="serum mdl.png" alt="" />
+      </div>
+      <div class="carousel">
+        <div class="product6">
+          <img src="serum white.png" alt="" class="image1" />
+          <img
+            src="face serun beneftis.png"
+            alt=""
+            class="image2"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <div class="saffron">Saffron Touch And Glow...</div>
+    </div>
+    <!------------------------------------------------------->
+
+    <!---------------------------------------- all Products ------------------------------------------>
+    <div class="all">
+      <div class="nav-tab">
+        <ul class="d-flex justify-content-evenly list-unstyled">
+          <li class="listitem">
+            <a href="" id="allprods" class="active">All Products</a>
+          </li>
+          <li class="listitem"><a href="" id="skinCareLink">Skin Care</a></li>
+          <li class="listitem"><a href="" id="hairCareLink">Hair Care</a></li>
+        </ul>
+      </div>
+      <div class="category" id="category">
+        <div class="loader"></div>
+        <img src="aloewhite.png" alt="" class="skincare" />
+        <img src="aloedark.JPG" alt="" class="skincare" />
+        <img src="facewashwhite.png" alt="" class="skincare" />
+        <img src="faceWashDark.JPG" alt="" class="skincare" />
+        <img src="serumwhite.png" alt="" class="skincare" />
+        <img src="faceserumDark.JPG" alt="" class="skincare" />
+        <img src="hairoilwhite.png" alt="" class="haircare" />
+        <img src="hairoilDark.jpg" alt="" class="haircare" />
+        <img src="haircleanserwhite.png" alt="" class="haircare" />
+        <img src="hairCleanserDark.JPG" alt="" class="haircare" />
+        <img src="hairpackwhite.png" alt="" class="haircare" />
+        <img src="hairpackdark.JPG" alt="" class="haircare" />
+      </div>
     </div>
 
     <!-- bootstrap -->
@@ -236,8 +284,9 @@
 
         setInterval(showNextText, 3000);
       });
+    </script>
 
-      //image
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
         const scanningContainers = document.querySelectorAll(
           ".scanning-container .image"
@@ -250,7 +299,7 @@
           scanningContainers.forEach((image, index) => {
             setTimeout(() => {
               image.classList.add("scale-up");
-            }, delay);
+            }, 3000);
             delay += interval; // Increase the delay for the next image
           });
 
@@ -276,6 +325,75 @@
 
         // Initial call to start the animation
         animateImages();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const allProdsLink = document.getElementById("allprods");
+        const skinCareLink = document.getElementById("skinCareLink");
+        const hairCareLink = document.getElementById("hairCareLink");
+        const category = document.getElementById("category");
+
+        allProdsLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          showLoader(() => showAllProducts());
+        });
+
+        skinCareLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          showLoader(() => showProducts("skincare"));
+        });
+
+        hairCareLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          showLoader(() => showProducts("haircare"));
+        });
+
+        function showAllProducts() {
+          const allImages = category.querySelectorAll(".skincare, .haircare");
+          allImages.forEach((img) => img.classList.remove("hidden"));
+        }
+
+        function showProducts(categoryToShow) {
+          const allImages = category.querySelectorAll(".skincare, .haircare");
+          allImages.forEach((img) => {
+            if (img.classList.contains(categoryToShow)) {
+              img.classList.remove("hidden");
+            } else {
+              img.classList.add("hidden");
+            }
+          });
+        }
+        function showLoader(callback) {
+          const loader = document.querySelector(".loader");
+          const allImages = category.querySelectorAll(".skincare, .haircare");
+
+          allImages.forEach((img) => img.classList.add("hidden"));
+
+          loader.classList.add("show");
+
+          setTimeout(() => {
+            loader.classList.remove("show");
+            if (callback) callback();
+          }, 3000);
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".nav-tab a");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove("active"));
+
+            // Add active class to the clicked tab
+            this.classList.add("active");
+          });
+        });
       });
     </script>
   </body>
