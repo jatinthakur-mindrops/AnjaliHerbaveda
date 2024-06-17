@@ -150,7 +150,7 @@
       <div class="carousel">
         <div class="product1">
           <img src="face pro.png" alt="Face Pro" class="image1" />
-          <img src="faceing.png" alt="Face Pro Hover" class="image2" />
+          <img src="manjishtha.png" alt="Face Pro Hover" class="image2" />
         </div>
       </div>
       <div class="treat">Manjishtha...</div>
@@ -162,7 +162,7 @@
       <div class="carousel">
         <div class="product2">
           <img src="aloe white.png" alt="" class="image1" />
-          <img src="aloeing.png" alt="" class="image2" />
+          <img src="alovera.png" alt="" class="image2" />
         </div>
       </div>
 
@@ -172,7 +172,7 @@
       <div class="carousel">
         <div class="product3">
           <img src="cleanser pro white.png" alt="" class="image1" />
-          <img src="cleansering.png" alt="" class="image2" />
+          <img src="panchamriy.png" alt="" class="image2" />
         </div>
       </div>
       <div class="protect">Panch Amrit...</div>
@@ -192,7 +192,7 @@
       <div class="carousel">
         <div class="product5">
           <img src="serum white.png" alt="" class="image1" />
-          <img src="oiling.png" alt="" class="image2" />
+          <img src="face serum.png" alt="" class="image2" />
         </div>
       </div>
       <div class="saffron">Saffron Touch And Glow...</div>
@@ -202,7 +202,7 @@
       <div class="carousel">
         <div class="product6">
           <img src="pack pro white.png" alt="" class="image1" />
-          <img src="oiling.png" alt="" class="image2" />
+          <img src="mask.png" alt="" class="image2" />
         </div>
       </div>
       <div class="banana">Banana Therapy Regrowth...</div>
@@ -257,14 +257,14 @@
           // Reset the images 3 seconds after the last image has appeared
           setTimeout(() => {
             resetImages();
-          }, delay);
+          }, delay); // Ensure the reset occurs after the last image's animation
         }
 
         function resetImages() {
           scanningContainers.forEach((image) => {
             image.classList.remove("scale-up");
             image.style.right = "107%";
-            image.style.visibility = "hidden";
+            // image.style.visibility = "hidden";
           });
 
           // Reapply the animation after a short delay to create the endless loop effect

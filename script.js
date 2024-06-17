@@ -1,26 +1,29 @@
-const slider = document.querySelector(".slider");
-const images = [
-  "url('image1.jpg')", // Replace with your image paths
-  "url('image2.jpg')",
-  "url('image3.jpg')",
-  "url('image4.jpg')",
-];
+const frames = [];
+const totalFrames = 10; // Adjust this to the total number of frames you have
+const frameDuration = 100; // Duration for each frame in milliseconds
 
-let currentSlideIndex = 0;
-
-function showSlide() {
-  slider
-    .querySelectorAll("img")
-    .forEach((img) => img.classList.remove("active"));
-
-  const newSlide = document.createElement("img");
-  newSlide.style.backgroundImage = images[currentSlideIndex];
-  newSlide.classList.add("active");
-  slider.appendChild(newSlide);
-
-  currentSlideIndex = (currentSlideIndex + 1) % images.length;
-
-  setTimeout(showSlide, 3000); // Change time as needed (in milliseconds)
+// Load frames
+for (let i = 0; i < totalFrames; i++) {
+  const frame = new Image();
+  frame.src = `frames/frame_${String(i).padStart(4, "0")}.png`;
+  frame.classList.add("frame");
+  frames.push(frame);
 }
 
-showSlide();
+// Append frames to the container
+const container = document.querySelector(".animation-container");
+frames.forEach((frame) => container.appendChild(frame));
+
+// Show the first frame initially
+frames[0].style.display = "block";
+
+// Function to display the next frame
+let currentFrame = 0;
+function nextFrame() {
+  frames[currentFrame].style.display = "none";
+  currentFrame = (currentFrame + 1) % totalFrames;
+  frames[currentFrame].style.display = "block";
+}
+
+// Set interval to switch frames
+setInterval(nextFrame, frameDuration);
