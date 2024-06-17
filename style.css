@@ -608,7 +608,7 @@
 
 .scanning-container {
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 100%;
     top: 0;
 }
@@ -622,6 +622,7 @@
     object-fit: fill;
     /* Ensure the image fits well */
     transition: right 1s ease-in-out;
+
 }
 
 .scale-up {
