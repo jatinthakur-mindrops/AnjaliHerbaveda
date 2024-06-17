@@ -868,7 +868,7 @@ li:nth-child(2) a:focus::after {
 
 
 .btnn {
-    background-image: radial-gradient(at top left, #B68769 20%, #210008 86%);
+    background-image: radial-gradient(at top left, #B68769 20%, #513317 86%);
     padding: 5px 15px;
     text-align: center;
     text-transform: uppercase;
