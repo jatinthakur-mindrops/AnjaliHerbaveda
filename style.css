@@ -241,7 +241,9 @@
     transition: opacity 0.5s ease;
 }
 
-
+.image1 {
+    object-fit: fill;
+}
 
 .product1 .image1 {
     opacity: 1;
@@ -372,7 +374,7 @@
     left: 50vh;
     bottom: 235vh;
     position: relative;
-    height: 46vh;
+    height: 44vh;
     max-width: 15%;
     border-radius: 10px;
 }
@@ -893,6 +895,23 @@ li:nth-child(2) a:focus::after {
 }
 
 
+.footer-sections {
+    justify-content: flex-start;
+    padding-top: 10vh;
+}
+
+.contact-info {
+    padding-inline: 28vh;
+}
+
+.poproducts {
+    padding-inline: 28vh;
+}
+
+.socials {
+    padding-inline: 5vh;
+    text-align: center;
+}
 
 @media screen and (max-height: 300px) {
     ul {
