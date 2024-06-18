@@ -746,34 +746,7 @@ li:nth-child(2) a:focus::after {
     z-index: 10;
 }
 
-.loader {
-    display: none;
-    position: relative !important;
-    width: 2.5em;
-    height: 2.5em;
-    transform: rotate(165deg);
-}
 
-.loader:before,
-.loader:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 0.25em;
-    transform: translate(-50%, -50%);
-}
-
-.loader:before {
-    animation: before8 2s infinite;
-}
-
-.loader:after {
-    animation: after6 2s infinite;
-}
 
 @keyframes before8 {
     0% {
@@ -817,11 +790,109 @@ li:nth-child(2) a:focus::after {
     }
 }
 
-.loader {
-    position: absolute;
-    top: calc(50% - 1.25em);
-    left: calc(50% - 1.25em);
+
+.email {
+    height: 45vh;
+    background-color: #FEECD4;
+    margin-block: 5vh;
+    align-items: center;
 }
+
+.input-container {
+    display: flex;
+    border: 1px solid #000;
+    overflow: hidden;
+    width: 32vw;
+    height: 7vh;
+}
+
+.send-button {
+    padding-inline: 12%;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-left: 1px solid black;
+}
+
+.send-button:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.email-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #f5e6ff;
+}
+
+.collage {
+    height: 100vh;
+    margin-inline: 5vh;
+}
+
+.upper {
+    height: 30vh;
+    margin-bottom: 3.3vh;
+}
+
+.mid {
+    height: 30vh;
+}
+
+.lower {
+    height: 30vh;
+    margin-top: 3.3vh;
+}
+
+
+.img1,
+.img2,
+.img3 {
+    width: 27vw;
+    height: 30vh;
+}
+
+.img1 img,
+.img2 img,
+.img3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.midimg,
+.midimg img {
+    height: 100%;
+}
+
+.footer {
+    padding-top: 10vh;
+    height: 100vh;
+    background-color: #000;
+}
+
+.foot-logo {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-logo hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 36%;
+    opacity: 1;
+}
+
+.foot-logo img {
+    height: 100%;
+}
+
+
 
 @media screen and (max-height: 300px) {
     ul {
@@ -888,7 +959,10 @@ li:nth-child(2) a:focus::after {
     text-decoration: none;
 }
 
+.btnn:hover {
+    color: white;
 
+}
 
 .icon {
     width: 50px;
