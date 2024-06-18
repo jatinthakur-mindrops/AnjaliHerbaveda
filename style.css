@@ -811,7 +811,7 @@ li:nth-child(2) a:focus::after {
 
 .collage {
     height: 86vh;
-
+    width: 100%;
 }
 
 .upper {
