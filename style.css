@@ -101,7 +101,7 @@
 
 
 .model {
-    height: 520vh;
+    height: 460vh;
     background-color: #FEECD4;
 
 }
@@ -217,8 +217,8 @@
     top: -25vh;
     margin-left: auto;
     position: relative;
-    height: 50vh;
-    max-width: 18%;
+    height: 49vh;
+    max-width: 15%;
 }
 
 .product1 img {
@@ -242,15 +242,14 @@
 }
 
 .image1 {
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .product1 .image1 {
     opacity: 1;
 }
 
-.product1 .image2,
-.product1 .image3 {
+.product1 .image2 {
     opacity: 0;
     z-index: 1;
 
@@ -260,18 +259,15 @@
     opacity: 0;
 }
 
-.product1:hover .image2,
-.product1:hover .image3 {
+.product1:hover .image2 {
     opacity: 1;
-}
-
-.product1:hover .image3 {
-    transition-delay: 3s;
+    background-color: white;
 
 }
+
+
 
 .product2 img {
-    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -287,8 +283,7 @@
     opacity: 1;
 }
 
-.product2 .image2,
-.product2 .image3 {
+.product2 .image2 {
     opacity: 0;
 }
 
@@ -297,17 +292,15 @@
 }
 
 .product2:hover .image2,
-.product2:hover .image3 {
+.product2:hover {
+    background-color: white;
     opacity: 1;
-}
-
-.product2:hover .image3 {
-    transition-delay: 3s;
 
 }
+
+
 
 .product2 {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 19%;
     position: relative;
@@ -321,7 +314,6 @@
 
 
 .product3 {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 50vh;
     z-index: 2;
@@ -329,7 +321,7 @@
     right: 10vh;
     margin-left: auto;
     position: relative;
-    height: 50vh;
+    height: 38vh;
     max-width: 18%;
     border-radius: 10px;
 }
@@ -348,8 +340,7 @@
     opacity: 1;
 }
 
-.product3 .image2,
-.product3 .image3 {
+.product3 .image2 {
     opacity: 0;
 }
 
@@ -358,17 +349,15 @@
 }
 
 .product3:hover .image2,
-.product3:hover .image3 {
+.product3:hover {
     opacity: 1;
-}
-
-.product3:hover .image3 {
-    transition-delay: 3s;
+    background-color: white;
 
 }
+
+
 
 .product4 {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 2;
     left: 50vh;
@@ -393,8 +382,7 @@
     opacity: 1;
 }
 
-.product4 .image2,
-.product4 .image3 {
+.product4 .image2 {
     opacity: 0;
 }
 
@@ -403,23 +391,21 @@
 }
 
 .product4:hover .image2,
-.product4:hover .image3 {
+.product4:hover {
     opacity: 1;
-}
-
-.product4:hover .image3 {
-    transition-delay: 3s;
+    background-color: white;
 
 }
+
+
 
 .product5 {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 2;
     left: 130vh;
     bottom: 265vh;
     position: relative;
-    height: 40vh;
+    height: 32vh;
     max-width: 15%;
     border-radius: 10px;
 }
@@ -438,8 +424,7 @@
     opacity: 1;
 }
 
-.product5 .image2,
-.product5 .image3 {
+.product5 .image2 {
     opacity: 0;
 }
 
@@ -448,23 +433,20 @@
 }
 
 .product5:hover .image2,
-.product5:hover .image3 {
+.product5:hover {
     opacity: 1;
+    background-color: white;
 }
 
-.product5:hover .image3 {
-    transition-delay: 3s;
 
-}
 
 .product6 {
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 2;
     left: 50vh;
     bottom: 295vh;
     position: relative;
-    height: 42vh;
+    height: 34vh;
     max-width: 16%;
     border-radius: 10px;
 }
@@ -483,8 +465,7 @@
     opacity: 1;
 }
 
-.product6 .image2,
-.product6 .image3 {
+.product6 .image2 {
     opacity: 0;
 }
 
@@ -493,14 +474,12 @@
 }
 
 .product6:hover .image2,
-.product6:hover .image3 {
+.product6:hover {
     opacity: 1;
+    background-color: white;
 }
 
-.product6:hover .image3 {
-    transition-delay: 3s;
 
-}
 
 .treat {
     position: relative;
@@ -540,7 +519,7 @@
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
-    bottom: 237vh;
+    bottom: 232vh;
     left: 35vh;
     color: saddlebrown;
 
@@ -556,7 +535,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    left: 115vh;
+    left: 110vh;
     bottom: 280vh;
 }
 
@@ -570,7 +549,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 327vh;
+    bottom: 320vh;
     left: 10vh;
 }
 
@@ -584,7 +563,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 360vh;
+    bottom: 350vh;
     left: 90vh;
 }
 
@@ -796,7 +775,7 @@ li:nth-child(2) a:focus::after {
 .email {
     height: 45vh;
     background-color: #FEECD4;
-    margin-block: 5vh;
+    margin-top: 5vh;
     align-items: center;
 }
 
@@ -831,8 +810,8 @@ li:nth-child(2) a:focus::after {
 }
 
 .collage {
-    height: 100vh;
-    margin-inline: 5vh;
+    height: 86vh;
+
 }
 
 .upper {
