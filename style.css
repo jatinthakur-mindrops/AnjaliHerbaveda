@@ -101,6 +101,7 @@
 
 
 .model {
+    width: 98.5vw;
     height: 460vh;
     background-color: #FEECD4;
 
@@ -126,7 +127,7 @@
 
 .mdl1 {
     position: relative;
-    margin-left: auto;
+    left: 137vh;
     /* height: 20%; */
 
     z-index: 1;
@@ -211,7 +212,6 @@
 
 .product1 {
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 50vh;
     z-index: 2;
     top: -25vh;
@@ -225,6 +225,7 @@
     height: 100%;
     width: 100%;
     border-radius: 10px;
+
 }
 
 .carousel {
@@ -243,6 +244,8 @@
 
 .image1 {
     object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .product1 .image1 {
@@ -273,7 +276,6 @@
     left: 0;
     height: 100%;
     border-radius: 10px;
-
     transition: opacity 0.5s ease;
 }
 
@@ -281,6 +283,8 @@
 
 .product2 .image1 {
     opacity: 1;
+
+
 }
 
 .product2 .image2 {
@@ -301,7 +305,6 @@
 
 
 .product2 {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 19%;
     position: relative;
     z-index: 3;
@@ -314,7 +317,7 @@
 
 
 .product3 {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     right: 50vh;
     z-index: 2;
     bottom: 165vh;
@@ -358,7 +361,7 @@
 
 
 .product4 {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     z-index: 2;
     left: 50vh;
     bottom: 235vh;
@@ -400,7 +403,7 @@
 
 
 .product5 {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     z-index: 2;
     left: 130vh;
     bottom: 265vh;
@@ -441,7 +444,7 @@
 
 
 .product6 {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     z-index: 2;
     left: 50vh;
     bottom: 295vh;
@@ -501,7 +504,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 12vh;
-    left: 135vh;
+    left: 130vh;
     bottom: 78vh;
     z-index: 4;
     display: inline-block;
@@ -564,7 +567,7 @@
     transform: rotate(-20deg);
     color: saddlebrown;
     bottom: 350vh;
-    left: 90vh;
+    left: 85vh;
 }
 
 .all {
