@@ -1206,14 +1206,14 @@ li:nth-child(2) a:focus::after {
     }
 
     .banana {
-        bottom: 213vh;
+        bottom: 85vh;
         left: 4vw;
         font-size: 6vh;
     }
 
     .panch {
         left: 60vw;
-        bottom: 159vh;
+        bottom: 40vh;
         font-size: 6vh;
     }
 
