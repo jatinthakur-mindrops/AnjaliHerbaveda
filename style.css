@@ -105,7 +105,7 @@
 .model {
     position: relative;
     width: 98.5vw;
-    height: 440vh;
+    height: 400vh;
     background-color: #FEECD4;
 
 }
@@ -162,7 +162,7 @@
 
 .mdl4 img {
     position: absolute;
-    bottom: 186vh;
+    top: 194vh;
     width: 30%;
     left: 10vh;
 }
@@ -173,7 +173,7 @@
     position: absolute;
     width: 28%;
     right: 10vh;
-    bottom: 130vh;
+    top: 255vh;
 }
 
 
@@ -182,7 +182,7 @@
     position: absolute;
     width: 25%;
     left: 10vh;
-    bottom: 60vh;
+    top: 315vh;
 }
 
 .image3 {
@@ -199,19 +199,18 @@
 
 .product1 {
     border-radius: 10px;
-    right: 45vh;
+    right: 50vh;
     z-index: 2;
     top: 43vh;
-    margin-left: auto;
     position: absolute;
-    height: 49vh;
-    width: 15%;
+    height: 37vh;
+
 }
 
 .product1 img {
 
-    height: 100%;
-    width: 100%;
+    height: 37vh;
+
     border-radius: 10px;
 
 }
@@ -313,20 +312,20 @@
     right: 60vh;
     z-index: 2;
     top: 173vh;
-    margin-left: auto;
+    width: 14vw;
     position: absolute;
-    height: 33vh;
-    width: 16%;
+    height: 29vh;
+
     border-radius: 10px;
 }
 
 .product3 img {
-    width: 100%;
+
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 10px;
-    height: 100%;
+    height: 29vh;
     transition: opacity 0.5s ease;
 }
 
@@ -358,11 +357,11 @@
 
 .product4 {
     z-index: 2;
-    left: 50vh;
+    left: 55vh;
     top: 233vh;
     position: absolute;
-    height: 44vh;
-    width: 15%;
+    height: 35vh;
+
     border-radius: 10px;
 }
 
@@ -408,18 +407,18 @@
     right: 50vh;
     top: 292vh;
     position: absolute;
-    height: 32vh;
-    width: 15%;
+    height: 30vh;
+
     border-radius: 10px;
 }
 
 .product5 img {
-    width: 100%;
+
 
     top: 0;
     left: 0;
     border-radius: 10px;
-    height: 100%;
+    height: 30vh;
     transition: opacity 0.5s ease;
 }
 
@@ -454,7 +453,7 @@
     top: 357vh;
     position: absolute;
     height: 34vh;
-    width: 16%;
+
     border-radius: 10px;
 }
 
@@ -531,7 +530,7 @@
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
-    top: 155vh;
+    top: 157vh;
     left: 15vh;
     color: saddlebrown;
 
@@ -561,7 +560,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 140vh;
+    top: 270vh;
     left: 10vh;
 }
 
@@ -575,7 +574,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 80vh;
+    top: 340vh;
     left: 90vh;
 }
 
