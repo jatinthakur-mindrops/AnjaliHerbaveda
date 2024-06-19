@@ -359,7 +359,7 @@
 .product4 {
     z-index: 2;
     left: 50vh;
-    top: 200vh;
+    top: 233vh;
     position: absolute;
     height: 44vh;
     width: 15%;
@@ -406,7 +406,7 @@
     top: 110vh;
     z-index: 2;
     right: 50vh;
-    top: 260vh;
+    top: 292vh;
     position: absolute;
     height: 32vh;
     width: 15%;
@@ -447,12 +447,11 @@
 }
 
 
-
 .product6 {
 
     z-index: 2;
     left: 45vh;
-    top: 330vh;
+    top: 357vh;
     position: absolute;
     height: 34vh;
     width: 16%;
