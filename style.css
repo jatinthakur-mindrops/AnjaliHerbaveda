@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+
 .fs1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -25,7 +26,8 @@
 }
 
 .navbar {
-    height: 90px;
+    width: 100vw;
+    height: 15vh;
     font-size: larger;
     padding-inline: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -60,10 +62,10 @@
 }
 
 .top {
-    margin-top: 90px;
+    margin-top: 15vh;
     display: flex;
     background-color: #B68769;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 15vh);
 }
 
 
@@ -101,20 +103,21 @@
 
 
 .model {
+    position: relative;
     width: 98.5vw;
-    height: 460vh;
+    height: 440vh;
     background-color: #FEECD4;
 
 }
 
 .bg {
     z-index: 1;
-    left: 16vh;
-    position: relative;
+    left: 18vh;
+    position: absolute;
     width: 29%;
     height: 11%;
     background-color: #B68769;
-    bottom: 45vh;
+    top: 85vh;
 }
 
 .listitems {
@@ -125,77 +128,61 @@
     margin-left: 3vw;
 }
 
-.mdl1 {
-    position: relative;
-    left: 137vh;
-    /* height: 20%; */
 
-    z-index: 1;
-    width: 35%;
-}
 
 .mdl1 img {
+    position: absolute;
     height: auto;
-    max-width: 100%;
+    width: 30vw;
+    height: auto;
+    right: 0;
+
 }
 
-.mdl2 {
-    width: 36%;
-}
 
 .mdl2 img {
-    top: -127vh;
+    top: 80vh;
     left: 25vh;
-    max-width: 100%;
-    position: relative;
+    max-width: 30%;
+    position: absolute;
     z-index: 2;
 }
 
-.mdl3 {
-    position: relative;
-    margin-left: auto;
-    z-index: 2;
-    max-width: 25%;
-}
+
+
 
 .mdl3 img {
-    width: 100%;
-    position: relative;
-    bottom: 150vh;
-    right: 25vh;
+    width: 33%;
+    position: absolute;
+    top: 140vh;
+    right: 9vh;
 }
 
-.mdl4 {
-    width: 30%;
-}
+
 
 .mdl4 img {
-    position: relative;
-    bottom: 215vh;
-    width: 100%;
+    position: absolute;
+    bottom: 186vh;
+    width: 30%;
     left: 10vh;
 }
 
-.mdl5 {
-    width: 30%;
-}
+
 
 .mdl5 img {
-    position: relative;
-    width: 100%;
-    left: 140vh;
-    bottom: 250vh;
+    position: absolute;
+    width: 28%;
+    right: 10vh;
+    bottom: 130vh;
 }
 
-.mdl6 {
-    width: 30%;
-}
+
 
 .mdl6 img {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 25%;
     left: 10vh;
-    bottom: 282vh
+    bottom: 60vh;
 }
 
 .image3 {
@@ -212,16 +199,17 @@
 
 .product1 {
     border-radius: 10px;
-    right: 50vh;
+    right: 45vh;
     z-index: 2;
-    top: -25vh;
+    top: 43vh;
     margin-left: auto;
-    position: relative;
+    position: absolute;
     height: 49vh;
-    max-width: 15%;
+    width: 15%;
 }
 
 .product1 img {
+
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -233,13 +221,14 @@
     max-width: 100%;
 }
 
-.product1 img {
+.product1 .image2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     transition: opacity 0.5s ease;
+
 }
 
 .image1 {
@@ -265,6 +254,7 @@
 .product1:hover .image2 {
     opacity: 1;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 
@@ -283,54 +273,55 @@
 
 .product2 .image1 {
     opacity: 1;
-
-
 }
 
 .product2 .image2 {
     opacity: 0;
+
+    position: absolute;
 }
 
 .product2:hover .image1 {
     opacity: 0;
 }
 
-.product2:hover .image2,
-.product2:hover {
-    background-color: white;
+.product2:hover .image2 {
     opacity: 1;
 
+}
+
+.product2:hover {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
 
 .product2 {
-    width: 19%;
-    position: relative;
+    width: 17%;
+    position: absolute;
     z-index: 3;
-    top: -145vh;
+    top: 110vh;
     border-radius: 10px;
-    left: 75vh;
-    height: 40vh;
+    left: 69vh;
+    height: 36vh;
 }
 
 
 
 .product3 {
-
-    right: 50vh;
+    right: 60vh;
     z-index: 2;
-    bottom: 165vh;
-    right: 10vh;
+    top: 173vh;
     margin-left: auto;
-    position: relative;
-    height: 38vh;
-    max-width: 18%;
+    position: absolute;
+    height: 33vh;
+    width: 16%;
     border-radius: 10px;
 }
 
 .product3 img {
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -345,15 +336,20 @@
 
 .product3 .image2 {
     opacity: 0;
+    position: absolute;
 }
 
 .product3:hover .image1 {
     opacity: 0;
 }
 
-.product3:hover .image2,
-.product3:hover {
+.product3:hover .image2 {
     opacity: 1;
+
+}
+
+.product3:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: white;
 
 }
@@ -361,19 +357,18 @@
 
 
 .product4 {
-
     z-index: 2;
     left: 50vh;
-    bottom: 235vh;
-    position: relative;
+    top: 200vh;
+    position: absolute;
     height: 44vh;
-    max-width: 15%;
+    width: 15%;
     border-radius: 10px;
 }
 
 .product4 img {
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
+
     top: 0;
     left: 0;
     border-radius: 10px;
@@ -387,15 +382,20 @@
 
 .product4 .image2 {
     opacity: 0;
+    position: absolute;
 }
 
 .product4:hover .image1 {
     opacity: 0;
 }
 
-.product4:hover .image2,
-.product4:hover {
+.product4:hover .image2 {
     opacity: 1;
+}
+
+.product4:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     background-color: white;
 
 }
@@ -403,19 +403,19 @@
 
 
 .product5 {
-
+    top: 110vh;
     z-index: 2;
-    left: 130vh;
-    bottom: 265vh;
-    position: relative;
+    right: 50vh;
+    top: 260vh;
+    position: absolute;
     height: 32vh;
-    max-width: 15%;
+    width: 15%;
     border-radius: 10px;
 }
 
 .product5 img {
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
+
     top: 0;
     left: 0;
     border-radius: 10px;
@@ -429,15 +429,20 @@
 
 .product5 .image2 {
     opacity: 0;
+    position: absolute;
 }
 
 .product5:hover .image1 {
     opacity: 0;
 }
 
-.product5:hover .image2,
-.product5:hover {
+.product5:hover .image2 {
     opacity: 1;
+}
+
+.product5:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     background-color: white;
 }
 
@@ -446,17 +451,17 @@
 .product6 {
 
     z-index: 2;
-    left: 50vh;
-    bottom: 295vh;
-    position: relative;
+    left: 45vh;
+    top: 330vh;
+    position: absolute;
     height: 34vh;
-    max-width: 16%;
+    width: 16%;
     border-radius: 10px;
 }
 
 .product6 img {
-    max-width: 100%;
-    position: absolute;
+    width: 100%;
+
     top: 0;
     left: 0;
     border-radius: 10px;
@@ -470,22 +475,27 @@
 
 .product6 .image2 {
     opacity: 0;
+    position: absolute;
 }
 
 .product6:hover .image1 {
     opacity: 0;
 }
 
-.product6:hover .image2,
-.product6:hover {
+.product6:hover .image2 {
     opacity: 1;
+}
+
+.product6:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     background-color: white;
 }
 
 
 
-.treat {
-    position: relative;
+.manjishtha {
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -493,19 +503,19 @@
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
-    top: -80vh;
+    top: 30vh;
     left: 35vh;
     color: saddlebrown;
 }
 
 .maintain {
-    position: relative;
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 12vh;
-    left: 130vh;
-    bottom: 78vh;
+    left: 125vh;
+    top: 95vh;
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
@@ -513,8 +523,8 @@
 
 }
 
-.protect {
-    position: relative;
+.saffron {
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -522,14 +532,14 @@
     z-index: 4;
     display: inline-block;
     transform: rotate(-20deg);
-    bottom: 232vh;
-    left: 35vh;
+    top: 155vh;
+    left: 15vh;
     color: saddlebrown;
 
 }
 
 .jadi {
-    position: relative;
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -539,11 +549,11 @@
     transform: rotate(-20deg);
     color: saddlebrown;
     left: 110vh;
-    bottom: 280vh;
+    top: 215vh;
 }
 
 .banana {
-    position: relative;
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -552,12 +562,12 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 320vh;
+    bottom: 140vh;
     left: 10vh;
 }
 
-.saffron {
-    position: relative;
+.panch {
+    position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -566,14 +576,18 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    bottom: 350vh;
-    left: 85vh;
+    bottom: 80vh;
+    left: 90vh;
 }
 
 .all {
     margin-inline: 5vw;
 
 
+}
+
+.gmp {
+    font-family: emoji;
 }
 
 .category img {
@@ -592,7 +606,7 @@
 
 .scanning-container {
     position: absolute;
-    width: 98%;
+    width: 100%;
     height: 100%;
     top: 0;
 }
@@ -858,7 +872,7 @@ li:nth-child(2) a:focus::after {
 
 .footer {
     padding-top: 10vh;
-    height: 100vh;
+    height: 85svh;
     background-color: #000;
 }
 
@@ -887,16 +901,75 @@ li:nth-child(2) a:focus::after {
 }
 
 .contact-info {
-    padding-inline: 28vh;
+    text-align: center;
+    padding-inline: 15vw;
+}
+
+.contact-info p {
+    margin-bottom: 0;
 }
 
 .poproducts {
-    padding-inline: 28vh;
+    width: 50vw;
+}
+
+
+.poptext {
+    margin-inline: 2vh;
+}
+
+.pro-heading {
+    display: flex;
+
+}
+
+.pro-heading hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 15%;
+    opacity: 1;
+}
+
+.pros {
+    justify-content: center;
+    width: 60%;
+    display: flex;
+}
+
+.pro1 {
+    margin-right: 15vh;
+}
+
+.pro2 {
+    margin-left: 15vh;
 }
 
 .socials {
-    padding-inline: 5vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+.socials p {
+    margin-right: 5vh;
+}
+
+
+.bottom hr {
+    margin-inline: auto;
+    margin-top: 6vh;
+    border: none;
+    border-top: 1px solid white;
+    width: 80%;
+    opacity: 1;
+
+}
+
+
+.label {
+    width: 80%;
+    margin-inline: auto;
 }
 
 @media screen and (max-height: 300px) {
@@ -938,6 +1011,7 @@ li:nth-child(2) a:focus::after {
 }
 
 .item-link:hover {
+    border-radius: 5px;
     color: white !important;
     background-color: #be8f65;
 
@@ -969,6 +1043,11 @@ li:nth-child(2) a:focus::after {
 
 }
 
+.quote {
+    text-decoration: none;
+    color: white;
+}
+
 .icon {
     width: 50px;
     height: 50px;
@@ -977,31 +1056,195 @@ li:nth-child(2) a:focus::after {
 }
 
 
+@media (max-width: 1025px) {
+    .top {
+        height: 45vh;
+    }
 
-@media (max-width: 768px) {
     .left {
-        width: 100vw !important;
-        height: 100vw !important;
-
+        height: 35vh;
     }
 
     .fs {
-        margin-left: -6vw !important;
-
+        font-size: 37px;
     }
 
-    .left-item {
-        width: 100vw !important;
+    .centerit {
+        width: 55vw;
+        justify-content: center;
+    }
+
+    .model {
+        position: relative;
+        width: 100vw;
+    }
+
+    .mdl1 img {
+        width: 40vw;
+    }
+
+    .mdl2 img {
+        max-width: 38%;
+        top: 65vh;
+        left: 10vw;
+    }
+
+    .bg {
+        top: 70vh;
+        left: 2vw;
+        height: 30vh;
+        width: 40%;
+    }
+
+    .mdl3 img {
+        width: 40%;
+        right: 5vw;
+        top: 110vh;
+    }
+
+    .mdl4 img {
+        top: 150vh;
+        left: 0;
+        width: 40%;
+    }
+
+    .mdl5 img {
+        width: 40%;
+        top: 200vh;
+        right: 0;
+    }
+
+    .mdl6 img {
+        width: 40%;
+        top: 250vh;
+        left: 5vh;
+    }
+
+    .product1 {
+        width: 16vw;
+        height: 28vh;
+        top: 30vh;
+        right: 30vh;
+    }
+
+    .product1 img {
+        width: 16vw;
+        height: 28vh;
+    }
+
+    .product2 {
+        height: 20vh;
+        top: 88vh;
+        width: 18vw;
+        left: 40vh;
+    }
+
+    .product3 {
+        height: 20vh;
+        width: 20vw;
+        top: 129vh;
+        right: 36vh;
+    }
+
+    .product3 img {
+        height: 22vh;
+        width: 20vw;
+    }
+
+    .product4 {
+        top: 180vh;
+        left: 31vh;
+        height: 15vh;
+    }
+
+    .product4 img {
+        height: 28vh;
+        width: 18vw;
+    }
+
+    .product5 {
+        top: 229vh;
+        right: 22vw;
+        width: 27%;
+        height: 18vh;
+    }
+
+    .product5 img {
+        height: 26vh;
+        width: 24vw;
+    }
+
+    .product6 {
+        top: 284vh;
+        height: 27vh;
+        width: 25vw;
+        left: 30vw;
+    }
+
+    .manjishtha {
+        font-size: 6vh;
+        top: 25vh;
+        left: 8vw;
+    }
+
+    .maintain {
+        left: 59vw;
+        top: 71vh;
+        font-size: 6vh;
+    }
+
+    .saffron {
+        font-size: 6vh;
+        top: 121vh;
+        left: 0;
+    }
+
+    .jadi {
+        top: 166vh;
+        left: 60vw;
+        font-size: 6vh;
+    }
+
+    .banana {
+        bottom: 213vh;
+        left: 4vw;
+        font-size: 6vh;
+    }
+
+    .panch {
+        left: 60vw;
+        bottom: 159vh;
+        font-size: 6vh;
+    }
+
+    .model {
+        height: 315vh;
+    }
+
+    .collage {
+        height: 43vh;
+    }
+
+    .footer {
+        height: 73vh;
+    }
+}
+
+@media (max-width: 680px) {
+    .top {
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .left {
+        width: 100vw;
+        height: 50vh;
     }
 
     .right {
         width: 100vw;
-        height: 100vw;
+        height: 50vh;
     }
 
-    .three-text {
-        display: flex !important;
-        justify-content: space-around !important;
-        width: 50vh;
-    }
+
 }
