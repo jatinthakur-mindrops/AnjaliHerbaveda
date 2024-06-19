@@ -870,7 +870,7 @@ li:nth-child(2) a:focus::after {
 
 .footer {
     padding-top: 10vh;
-    height: 85svh;
+    height: 90vh;
     background-color: #000;
 }
 
