@@ -1055,17 +1055,17 @@ li:nth-child(2) a:focus::after {
 @media (max-width: 769px) {
     .top {
         flex-wrap: wrap;
-        height: 90vh;
+        height: 70vh;
     }
 
     .left {
         width: 100vw;
-        height: 40vh;
+        height: 35vh;
     }
 
     .right {
         width: 100vw;
-        height: 50vh;
+        height: 35vh;
     }
 
     .footer {
