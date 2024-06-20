@@ -630,7 +630,7 @@
     padding: 0;
     list-style: none;
     display: table;
-    width: 600px;
+    width: 100vw;
     text-align: center;
 }
 
@@ -1142,4 +1142,6 @@ li:nth-child(2) a:focus::after {
         max-width: 100%;
         padding-left: 0;
     }
+
+
 }
