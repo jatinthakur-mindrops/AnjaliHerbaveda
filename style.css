@@ -27,7 +27,7 @@
 
 .navbar {
     width: 100vw;
-    height: 15vh;
+
     font-size: larger;
     padding-inline: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -118,10 +118,13 @@
     margin-right: 3vw !important;
 }
 
-.logo {
+.logo-desktop {
     margin-left: 3vw;
 }
 
+.mobile-logo {
+    display: none;
+}
 
 .model {
     position: relative;
@@ -183,7 +186,7 @@
 
 .mdl2 {
     margin-left: 5vw;
-    margin-top: 10vw;
+    margin-top: 10vh;
     width: 33vw;
     position: relative;
     height: auto;
@@ -235,7 +238,7 @@
 }
 
 .mdl3 {
-    margin-top: 5vw;
+    margin-top: 5vh;
     width: 33vw;
     position: relative;
     height: auto;
@@ -549,9 +552,21 @@
     white-space: nowrap;
 }
 
-.all {
-    margin-inline: 5vw;
+.category {
+    padding-bottom: 2vh;
+    background-image: url("./background.webp");
+}
 
+.row1 {
+    margin-inline: 5vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card1 {
+    width: 50%;
+    padding: 2%;
 
 }
 
@@ -559,11 +574,7 @@
     font-family: emoji;
 }
 
-.category img {
-    margin-left: 3vw;
-    width: 18vw;
-    margin-bottom: 5vh;
-}
+
 
 .container {
     position: relative;
@@ -626,7 +637,7 @@
 
 .nav-tab ul {
     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-    margin: 3vh auto;
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
     display: table;
@@ -642,17 +653,23 @@
 }
 
 .nav-tab a {
-    font-size: large;
+    font-size: x-large;
     text-decoration: none;
-    color: #000;
+    color: black;
     display: block;
     position: relative;
     padding: 0.2em 0;
 }
 
+.allpr {
+    border-bottom: 2px solid black;
+
+}
+
 .nav-tab a.active {
+
     font-weight: bold;
-    color: #000;
+    color: black;
 }
 
 /* Fade in */
@@ -700,6 +717,7 @@ li:nth-child(2) a:focus::after {
 
 .nav-tab a:hover::after,
 .nav-tab a:focus::after {
+    border-bottom: none;
     transform: scale(1);
 }
 
@@ -761,7 +779,7 @@ li:nth-child(2) a:focus::after {
 .email {
     height: 45vh;
     background-color: #FEECD4;
-    margin-top: 5vh;
+
     align-items: center;
 }
 
@@ -1039,7 +1057,7 @@ li:nth-child(2) a:focus::after {
     }
 
     .fs {
-        font-size: 37px;
+        font-size: xx-large;
     }
 
     .centerit {
@@ -1056,23 +1074,130 @@ li:nth-child(2) a:focus::after {
 }
 
 @media (max-width: 769px) {
+    .container-fluid {
+        padding-left: 0;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .logo {
+        height: 12vh;
+        margin-top: -1vh;
+    }
+
+
+
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
     .top {
         flex-wrap: wrap;
-        height: 72vh;
+        height: 87vh;
+        margin-top: 13vh;
     }
 
     .left {
         width: 100vw;
-        height: 36vh;
+        height: 42vh;
     }
 
     .left-item {
         margin-top: 1vh !important;
     }
 
+    .three-text {
+        margin-top: 1rem !important;
+    }
+
     .right {
         width: 100vw;
-        height: 36vh;
+        height: 45vh;
+    }
+
+    .mdl1,
+    .mdl2,
+    .mdl3,
+    .mdl4,
+    .mdl5,
+    .mdl6 {
+        width: 45vw;
+    }
+
+    .product-container1 img {
+        width: 17vw;
+    }
+
+    .product-container2 img,
+    .product-container3 img,
+    .product-container4 img,
+    .product-container5 img,
+    .product-container6 img {
+        width: 23vw;
+    }
+
+    .mld2,
+    .mdl4,
+    .mdl6 {
+        margin-top: 10vh;
+    }
+
+    .mdl3,
+    .mdl5 {
+        margin-top: 12vh;
+    }
+
+    .manjishtha,
+    .maintain,
+    .saffron,
+    .jadi,
+    .panch,
+    .banana {
+        transform: rotate(-30deg);
+
+    }
+
+    .manjishtha {
+        left: -100%;
+    }
+
+    .maintain {
+        left: 125%;
+    }
+
+    .saffron {
+        top: 43%;
+        left: -126%;
+    }
+
+    .jadi {
+        top: 30%;
+        left: 135%;
+    }
+
+    .banana {
+        left: -128%;
+        top: 35%;
+    }
+
+    .panch {
+        top: 30%;
+        left: 125%;
+    }
+
+    .row1 {
+        flex-wrap: wrap;
+    }
+
+    .card1 {
+        width: 100%;
     }
 
     .footer {
