@@ -62,10 +62,15 @@
 }
 
 .top {
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     background-color: #B68769;
-    height: calc(100vh - 15vh);
+    height: calc(100vh - 10vh);
+}
+
+.logo img {
+    height: 9vh;
+
 }
 
 
@@ -293,6 +298,7 @@
 
 
 .mdl4 {
+    margin-left: 5vw;
     margin-top: 5vh;
     position: relative;
     width: 30vw;
@@ -648,7 +654,7 @@
 .nav-tab li {
     display: table-cell;
     position: relative;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     cursor: pointer;
 }
 
@@ -658,72 +664,24 @@
     color: black;
     display: block;
     position: relative;
-    padding: 0.2em 0;
+    bottom: -1px;
+    padding: 1vh;
 }
 
-.allpr {
-    border-bottom: 2px solid black;
 
+.nav-tab a:hover,
+.nav-tab a:active,
+.active1 {
+    background-color: #462C15;
+    color: #FEECD4 !important;
+    border-radius: 5px 5px 0 0;
+    padding: 1vh;
 }
 
-.nav-tab a.active {
-
-    font-weight: bold;
-    color: black;
-}
-
-/* Fade in */
-.nav-tab a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: black;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-}
-
-/* 
-.nav-tab a:hover::after,
-.nav-tab a:focus::after,
-.nav-tab a.active::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-} */
-
-/* Slide in */
-/* li:nth-child(2) a {
-    overflow: hidden;
-}
-
-li:nth-child(2) a::after {
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
-}
-
-li:nth-child(2) a:hover::after,
-li:nth-child(2) a:focus::after {
-    transform: translate3d(0, 0, 0);
-} */
-
-/* Scale from center */
-.nav-tab a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-}
-
-.nav-tab a:hover::after,
-.nav-tab a:focus::after {
-    border-bottom: none;
-    transform: scale(1);
-}
 
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .show {
@@ -731,7 +689,9 @@ li:nth-child(2) a:focus::after {
     z-index: 10;
 }
 
-
+.mobilecard {
+    display: none;
+}
 
 @keyframes before8 {
     0% {
@@ -1083,7 +1043,7 @@ li:nth-child(2) a:focus::after {
     }
 
     .logo {
-        height: 12vh;
+        height: 8vh;
         margin-top: -1vh;
     }
 
@@ -1101,7 +1061,7 @@ li:nth-child(2) a:focus::after {
     .top {
         flex-wrap: wrap;
         height: 87vh;
-        margin-top: 13vh;
+        margin-top: 8vh;
     }
 
     .left {
@@ -1128,11 +1088,15 @@ li:nth-child(2) a:focus::after {
     .mdl4,
     .mdl5,
     .mdl6 {
-        width: 45vw;
+        width: 50vw;
     }
 
     .product-container1 img {
-        width: 17vw;
+        width: 25vw;
+    }
+
+    .product-container3 {
+        left: -30%;
     }
 
     .product-container2 img,
@@ -1140,7 +1104,7 @@ li:nth-child(2) a:focus::after {
     .product-container4 img,
     .product-container5 img,
     .product-container6 img {
-        width: 23vw;
+        width: 30vw;
     }
 
     .mld2,
@@ -1151,7 +1115,7 @@ li:nth-child(2) a:focus::after {
 
     .mdl3,
     .mdl5 {
-        margin-top: 12vh;
+        margin-top: 15vh;
     }
 
     .manjishtha,
@@ -1165,16 +1129,16 @@ li:nth-child(2) a:focus::after {
     }
 
     .manjishtha {
-        left: -100%;
+        left: -85%;
     }
 
     .maintain {
-        left: 125%;
+        left: 120%;
     }
 
     .saffron {
         top: 43%;
-        left: -126%;
+        left: -107%;
     }
 
     .jadi {
@@ -1183,7 +1147,7 @@ li:nth-child(2) a:focus::after {
     }
 
     .banana {
-        left: -128%;
+        left: -106%;
         top: 35%;
     }
 
@@ -1198,6 +1162,18 @@ li:nth-child(2) a:focus::after {
 
     .card1 {
         width: 100%;
+    }
+
+    .desktopcard {
+        display: none;
+    }
+
+    .mobilecard {
+        display: block;
+    }
+
+    .nav-tab a {
+        font-size: large;
     }
 
     .footer {
@@ -1215,9 +1191,28 @@ li:nth-child(2) a:focus::after {
         margin-bottom: 3vh;
     }
 
-    .pro2 {
-        width: 50%;
-        padding-left: 12vw;
+    .pro-heading {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .poptext {
+        margin-inline: 0;
+        text-align: center;
+    }
+
+    .pro-heading hr {
+        display: none;
+    }
+
+    .pros {
+
+        display: block;
+        text-align: center;
+    }
+
+    .pro1 {
+        width: 100%;
     }
 
     .socials p {

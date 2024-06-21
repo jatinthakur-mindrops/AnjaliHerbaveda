@@ -181,7 +181,7 @@
     <!---------------------MODELS------------------------>
     <div class="model">
       <div class="mdl1">
-        <div class="manjishtha">Manjishtha...</div>
+        <div class="manjishtha">Manjishtha</div>
         <img
           src="images/facewashModel.webp"
           alt=""
@@ -206,7 +206,7 @@
 
       <div class="mdl2">
         <div class="bg"></div>
-        <div class="maintain">Aloevera Gel...</div>
+        <div class="maintain">Aloevera Gel</div>
 
         <img
           src="images/aloeveraModel.webp"
@@ -251,7 +251,7 @@
             loading="lazy"
           />
         </div>
-        <div class="saffron">Saffron Touch And Glow...</div>
+        <div class="saffron">Saffron Touch And Glow</div>
       </div>
 
       <div class="mdl4">
@@ -271,7 +271,7 @@
           />
         </div>
 
-        <div class="jadi">Jadi Booti...</div>
+        <div class="jadi">Jadi Booti</div>
       </div>
       <div class="mdl5">
         <img
@@ -294,7 +294,7 @@
             loading="lazy"
           />
         </div>
-        <div class="banana">Banana Therapy Regrowth...</div>
+        <div class="banana">Banana Therapy Regrowth</div>
       </div>
       <div class="mdl6">
         <img
@@ -317,7 +317,7 @@
             loading="lazy"
           />
         </div>
-        <div class="panch">Panch Amrit...</div>
+        <div class="panch">Panch Amrit</div>
       </div>
     </div>
     <!------------------------------------------------------->
@@ -327,7 +327,7 @@
       <div class="nav-tab">
         <ul class="d-flex justify-content-evenly list-unstyled">
           <li class="listitem">
-            <a href="#" id="allprods" class="allpr">All Products</a>
+            <a href="#" id="allprods" class="active1">All Products</a>
           </li>
           <li class="listitem"><a href="#" id="hairCareLink">Hair Care</a></li>
           <li class="listitem"><a href="#" id="skinCareLink">Skin Care</a></li>
@@ -336,36 +336,64 @@
       <div class="category" id="category">
         <div class="row1">
           <img
-            src="images/all products/aloe vera card.webp"
-            class="aloecard card1 skincare"
+            src="images/all products/aloe vera card.png"
+            class="desktopcard card1 skincare"
             alt=""
+          />
+          <img
+            src="images/mobile view cards/aloe vera jail copy.png"
+            alt=""
+            class="mobilecard card1 skincare"
           />
           <img
             src="images/all products/face wash card.webp"
-            class="washcard card1 skincare"
+            class="desktopcard card1 skincare"
             alt=""
           />
-
+          <img
+            src="images/mobile view cards/face wash copy.png"
+            alt=""
+            class="mobilecard card1 skincare"
+          />
           <img
             src="images/all products/face serum card.webp"
-            class="serumcard card1 skincare"
+            class="desktopcard card1 skincare"
             alt=""
+          />
+          <img
+            src="images/mobile view cards/face serum2 copy.png"
+            alt=""
+            class="mobilecard card1 skincare"
           />
           <img
             src="images/all products/hair cleanser card.webp"
-            class="cleansercard card1 haircare"
+            class="desktopcard card1 haircare"
             alt=""
           />
-
+          <img
+            src="images/mobile view cards/hair cleanser copy.png"
+            alt=""
+            class="mobilecard card1 haircare"
+          />
           <img
             src="images/all products/hair pack card.webp"
-            class="packcard card1 haircare"
+            class="desktopcard card1 haircare"
             alt=""
+          />
+          <img
+            src="images/mobile view cards/hair pack copy.png"
+            alt=""
+            class="mobilecard card1 haircare"
           />
           <img
             src="images/all products/hair-oil card.webp"
-            class="oilcard card1 haircare"
+            class="desktopcard card1 haircare"
             alt=""
+          />
+          <img
+            src="images/mobile view cards/hair-oil copy.png"
+            alt=""
+            class="mobilecard card1 haircare"
           />
         </div>
       </div>
@@ -572,35 +600,25 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const tabs = document.querySelectorAll(".nav-tab a");
+        const links = document.querySelectorAll(".nav-tab a");
 
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
+        links.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
 
-            // Remove active class from all tabs
-            tabs.forEach((t) => t.classList.remove("allpr"));
+            // Remove 'active' class from all links
+            links.forEach(function (item) {
+              item.classList.remove("active1");
+            });
 
-            // Add active class to the clicked tab
-            this.classList.add("active");
+            // Add 'active' class to the clicked link
+            link.classList.add("active1");
           });
         });
       });
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabs = document.querySelectorAll(".nav-tab a");
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent default anchor behavior
+    </script>
 
-            // Remove active class from all tabs
-            tabs.forEach((t) => t.classList.remove("allpr"));
-
-            // Add active class to the clicked tab
-            this.classList.add("active");
-          });
-        });
-      });
-
+    <script>
       //same height
       document.addEventListener("DOMContentLoaded", function () {
         function matchHeights(productClass, productImg2Class) {
