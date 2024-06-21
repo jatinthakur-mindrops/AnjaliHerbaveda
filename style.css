@@ -69,7 +69,7 @@
 }
 
 .logo img {
-    height: 9vh;
+    height: 11vh;
 
 }
 
@@ -119,13 +119,13 @@
     top: 10%;
 }
 
+
+
 .listitems {
     margin-right: 3vw !important;
 }
 
-.logo-desktop {
-    margin-left: 3vw;
-}
+
 
 .mobile-logo {
     display: none;
@@ -307,6 +307,8 @@
 
 .model4 {
     width: 100%;
+    z-index: 2;
+    position: relative;
     height: auto;
 }
 
@@ -406,7 +408,7 @@
 
 .mdl6 {
     margin-top: 5vh;
-
+    margin-left: 5vw;
     position: relative;
     width: 25vw;
     height: auto;
@@ -415,6 +417,8 @@
 .model6 {
     width: 100%;
     height: auto;
+    z-index: 2;
+    position: relative;
 }
 
 .product-container6 {
@@ -523,7 +527,7 @@
     display: inline-block;
     transform: rotate(-20deg);
     color: saddlebrown;
-    left: 150%;
+    left: 145%;
     top: 25%;
     white-space: nowrap;
 }
@@ -554,7 +558,7 @@
     transform: rotate(-20deg);
     color: saddlebrown;
     top: 25%;
-    left: 160%;
+    left: 155%;
     white-space: nowrap;
 }
 
@@ -904,6 +908,7 @@
 }
 
 .bottom {
+    text-align: center;
     padding-bottom: 3vh;
 }
 
@@ -1006,6 +1011,15 @@
     /* Default fill color */
 }
 
+.mindrops {
+    text-decoration: none;
+    color: white;
+}
+
+.mindrops:hover {
+    text-decoration: underline;
+
+}
 
 @media (max-width: 1025px) {
     .top {
@@ -1044,7 +1058,7 @@
 
     .logo {
         height: 8vh;
-        margin-top: -1vh;
+
     }
 
 
@@ -1058,10 +1072,14 @@
         display: block;
     }
 
+    .logo img {
+        height: auto;
+    }
+
     .top {
         flex-wrap: wrap;
         height: 87vh;
-        margin-top: 8vh;
+        margin-top: 9vh;
     }
 
     .left {
@@ -1107,7 +1125,7 @@
         width: 30vw;
     }
 
-    .mld2,
+    .mdl2,
     .mdl4,
     .mdl6 {
         margin-top: 10vh;
@@ -1143,7 +1161,7 @@
 
     .jadi {
         top: 30%;
-        left: 135%;
+        left: 130%;
     }
 
     .banana {
@@ -1153,7 +1171,7 @@
 
     .panch {
         top: 30%;
-        left: 125%;
+        left: 120%;
     }
 
     .row1 {
@@ -1211,12 +1229,20 @@
         text-align: center;
     }
 
+    .pros p {
+        margin-bottom: 0;
+    }
+
     .pro1 {
         width: 100%;
     }
 
     .socials p {
         margin-inline: 3vw;
+    }
+
+    .label {
+        font-size: small;
     }
 
     .collage {
