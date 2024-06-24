@@ -934,6 +934,7 @@
 }
 
 .explore-btn {
+    background-color: white;
     letter-spacing: 3px;
     padding-inline: 6vw;
     padding-block: 2vh;
@@ -1056,9 +1057,6 @@
         height: 6vh;
 
     }
-
-
-
 
     .logo-desktop {
         display: none;
