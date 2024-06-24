@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 * {
@@ -44,6 +44,9 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    font-family: "Duru Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     /* margin-inline: 50px; */
 }
 
@@ -472,7 +475,14 @@
 
 
 
-.manjishtha {
+.manjishtha,
+.maintain,
+.saffron,
+.jadi,
+.banana,
+.panch {
+    padding-inline: 8px;
+    background-color: #654122;
     position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
@@ -480,86 +490,38 @@
     font-size: 6vw;
     z-index: 4;
     display: inline-block;
-    transform: rotate(-20deg);
+    color: #FEECD4;
+    white-space: nowrap;
+}
+
+.manjishtha {
     top: 50%;
     left: -170%;
-    color: saddlebrown;
 }
 
 .maintain {
-    white-space: nowrap;
-    position: absolute;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
     left: 150%;
     top: 25%;
-    z-index: 4;
-    display: inline-block;
-    transform: rotate(-20deg);
-    color: saddlebrown;
-
 }
 
 .saffron {
-    position: absolute;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
-    z-index: 4;
-    display: inline-block;
-    transform: rotate(-20deg);
     top: 30%;
     left: -195%;
-    color: saddlebrown;
-
 }
 
 .jadi {
-    position: absolute;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
-    z-index: 4;
-    display: inline-block;
-    transform: rotate(-20deg);
-    color: saddlebrown;
     left: 145%;
     top: 25%;
-    white-space: nowrap;
 }
 
 .banana {
-    position: absolute;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
-    z-index: 4;
-    display: inline-block;
-    transform: rotate(-20deg);
-    color: saddlebrown;
     top: 25%;
     left: -210%;
-    white-space: nowrap;
 }
 
 .panch {
-    position: absolute;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6vw;
-    z-index: 4;
-    display: inline-block;
-    transform: rotate(-20deg);
-    color: saddlebrown;
     top: 25%;
     left: 155%;
-    white-space: nowrap;
 }
 
 .category {
@@ -770,13 +732,10 @@
 
 .email-input {
     border: 1px solid #000;
-
     flex: 1;
     padding: 10px;
-
-
     font-size: 14px;
-    background-color: #f5e6ff;
+    background-color: #FEECD4;
 }
 
 .collage {
@@ -956,9 +915,13 @@
     }
 }
 
+.are {
+    font-size: 50px;
+}
+
 .texts p {
     display: none;
-    margin-inline: auto;
+    margin-left: 4vh;
 }
 
 .texts p.active {
@@ -967,10 +930,22 @@
     display: block;
 }
 
+.explore-btn {
+    letter-spacing: 3px;
+    padding-inline: 6vw;
+    padding-block: 2vh;
+    border: 1px solid transparent;
+}
+
+.explore-btn:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
 .item-link:hover {
     border-radius: 5px;
-    color: white !important;
-    background-color: #be8f65;
+    color: #654122 !important;
 
 }
 
