@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -941,6 +944,13 @@
     color: white;
     border: 1px solid white;
     background-color: transparent;
+}
+
+.three-text {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .item-link:hover {
