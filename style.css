@@ -743,7 +743,7 @@
 
 .collage {
     height: 86vh;
-    width: 98vw;
+    width: 100vw;
 }
 
 .collage-vertical {
@@ -1014,6 +1014,7 @@
     }
 
     .left {
+        padding-top: 2vh;
         height: 35vh;
     }
 
@@ -1052,7 +1053,7 @@
     }
 
     .logo {
-        height: 8vh;
+        height: 6vh;
 
     }
 
@@ -1074,7 +1075,7 @@
     .top {
         flex-wrap: wrap;
         height: 87vh;
-        margin-top: 9vh;
+        margin-top: 6vh;
     }
 
     .left {
@@ -1087,7 +1088,7 @@
     }
 
     .three-text {
-        margin-top: 1rem !important;
+        margin-top: 3rem !important;
     }
 
     .right {
@@ -1101,72 +1102,109 @@
     .mdl4,
     .mdl5,
     .mdl6 {
-        width: 50vw;
+        width: 70vw;
+    }
+
+    .product-container1 {
+        left: -28%;
+        top: 52%;
     }
 
     .product-container1 img {
-        width: 25vw;
+        width: 40vw;
+    }
+
+    .product-container2 {
+        top: 70%;
+        right: -30%;
     }
 
     .product-container3 {
         left: -30%;
     }
 
-    .product-container2 img,
-    .product-container3 img,
-    .product-container4 img,
-    .product-container5 img,
-    .product-container6 img {
-        width: 30vw;
+    .product-container4 {
+        right: 30%;
     }
 
-    .mdl2,
-    .mdl4,
-    .mdl6 {
+    .product-container5 {
+        left: -35%;
+    }
+
+    .product-container6 {
+        right: 35%;
+    }
+
+    .product-container5 img {
+        width: 50vw;
+    }
+
+    .product-container6 img {
+        width: 45vw;
+    }
+
+    .product-container2 img,
+    .product-container3 img,
+    .product-container4 img {
+        width: 40vw;
+    }
+
+    .mdl1 img {
         margin-top: 10vh;
+    }
+
+    .mdl2 {
+        margin-top: 30vh;
+    }
+
+    .mdl6,
+    .mdl4 {
+        margin-top: 22vh;
     }
 
     .mdl3,
     .mdl5 {
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
 
-    .manjishtha,
-    .maintain,
-    .saffron,
-    .jadi,
-    .panch,
-    .banana {
-        transform: rotate(-30deg);
 
+    .maintain,
+    .manjishtha,
+    .panch,
+    .banana,
+    .saffron,
+    .jadi {
+        font-size: 9vw;
     }
 
     .manjishtha {
-        left: -85%;
+        top: 6%;
+        left: -36%;
     }
 
     .maintain {
-        left: 120%;
+        left: 60%;
+        top: -35%;
     }
 
     .saffron {
-        top: 43%;
-        left: -107%;
+        top: -35%;
+        left: -40%;
     }
 
     .jadi {
-        top: 30%;
-        left: 130%;
+        top: -25%;
+        left: 70%;
     }
 
     .banana {
-        left: -106%;
-        top: 35%;
+        left: -40%;
+        top: -25%;
     }
 
     .panch {
-        top: 30%;
-        left: 120%;
+        top: -20%;
+        left: 55%;
     }
 
     .row1 {
@@ -1285,6 +1323,24 @@
 
     .texts {
         margin-right: 0 !important;
+
+    }
+
+    .are {
+        font-size: xx-large;
+
+    }
+
+    .explore-btn {
+        padding-block: 1vh;
+        width: 50%;
+    }
+
+    .texts p {
+        text-align: left;
+        margin-left: 1vh;
+        font-size: xx-large;
+
     }
 
     .container {
