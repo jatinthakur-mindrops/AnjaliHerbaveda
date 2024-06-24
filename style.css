@@ -1023,11 +1023,6 @@
         font-size: xx-large;
     }
 
-    .centerit {
-        width: 55vw;
-        justify-content: center;
-    }
-
 
     .collage {
         height: 43vh;
@@ -1085,8 +1080,16 @@
         margin-top: 1vh !important;
     }
 
+    .fs {
+        font-size: x-large;
+    }
+
+    .fs p {
+        margin-bottom: 0;
+    }
+
     .three-text {
-        margin-top: 3rem !important;
+        margin-top: 2rem !important;
     }
 
     .right {
@@ -1148,21 +1151,24 @@
     }
 
     .mdl1 img {
-        margin-top: 10vh;
+        margin-top: 12vh;
     }
 
     .mdl2 {
-        margin-top: 30vh;
+        margin-top: 35vh;
     }
 
-    .mdl6,
+    .mdl6 {
+        margin-top: 27vh;
+    }
+
     .mdl4 {
-        margin-top: 22vh;
+        margin-top: 25vh;
     }
 
     .mdl3,
     .mdl5 {
-        margin-top: 25vh;
+        margin-top: 30vh;
     }
 
 
@@ -1172,7 +1178,7 @@
     .banana,
     .saffron,
     .jadi {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     .manjishtha {
@@ -1182,26 +1188,26 @@
 
     .maintain {
         left: 60%;
-        top: -35%;
+        top: -30%;
     }
 
     .saffron {
-        top: -35%;
+        top: -32%;
         left: -40%;
     }
 
     .jadi {
-        top: -25%;
+        top: -22%;
         left: 70%;
     }
 
     .banana {
         left: -40%;
-        top: -25%;
+        top: -22%;
     }
 
     .panch {
-        top: -20%;
+        top: -18%;
         left: 55%;
     }
 
@@ -1331,7 +1337,7 @@
 
     .explore-btn {
         padding-block: 1vh;
-        width: 50%;
+        width: 40%;
     }
 
     .texts p {
