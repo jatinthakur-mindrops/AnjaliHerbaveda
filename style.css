@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 
@@ -135,6 +135,11 @@
 
 .mobile-logo {
     display: none;
+}
+
+
+.qualities img {
+    width: 100%;
 }
 
 .model {
@@ -485,7 +490,7 @@
 .banana,
 .panch {
     padding-inline: 8px;
-    background-color: #654122;
+    color: #654122;
     position: absolute;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
@@ -493,7 +498,7 @@
     font-size: 6vw;
     z-index: 4;
     display: inline-block;
-    color: #FEECD4;
+
     white-space: nowrap;
 }
 
@@ -549,7 +554,46 @@
     font-family: emoji;
 }
 
+.features {
 
+    padding: 2rem 2rem 0 2rem;
+}
+
+.upper-feature,
+.lower-feature {
+    margin-bottom: 2rem;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pack,
+.pan,
+.safety,
+.quality,
+.private {
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    margin: 0 1rem;
+    width: 30%;
+    height: 100%;
+}
+
+.feature-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.feature-text {
+    font-size: large;
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    color: #513317;
+}
 
 .container {
     position: relative;
@@ -743,7 +787,7 @@
 
 .collage {
     height: 86vh;
-    width: 100vw;
+
 }
 
 .collage-vertical {
@@ -965,7 +1009,7 @@
     background-image: radial-gradient(at top left, #B68769 20%, #513317 86%);
     padding: 5px 15px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: upper-featurecase;
     transition: 0.5s;
     background-size: 100% auto;
     color: white;
@@ -1049,7 +1093,7 @@
     }
 
     .logo {
-        height: 6vh;
+        height: 8vh;
 
     }
 
@@ -1068,7 +1112,7 @@
     .top {
         flex-wrap: wrap;
         height: 87vh;
-        margin-top: 6vh;
+        margin-top: 8vh;
     }
 
     .left {
@@ -1077,7 +1121,7 @@
     }
 
     .left-item {
-        margin-top: 1vh !important;
+        margin-top: 2vh !important;
     }
 
     .fs {
@@ -1178,7 +1222,7 @@
     .banana,
     .saffron,
     .jadi {
-        font-size: 8vw;
+        font-size: 9vw;
     }
 
     .manjishtha {
@@ -1213,6 +1257,26 @@
 
     .row1 {
         flex-wrap: wrap;
+    }
+
+    .upper-feature,
+    .lower-feature {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .pack,
+    .pan,
+    .safety,
+    .quality,
+    .private {
+        width: 100%;
+    }
+
+    .pack,
+    .pan,
+    .quality {
+        margin-bottom: 2rem;
     }
 
     .card1 {
