@@ -23,50 +23,29 @@
     <link rel="icon" href="16x16 copy.png" />
     <title>Anjali Herbavedic-Home Page</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container-fluid">
-        <div class="logo">
-          <a class="navbar-brand" href="#"
-            ><img
-              src="logo new (1).png"
-              alt="Logo"
-              loading="lazy"
-              class="logo-desktop" />
-            <img src="logo mobile.png" alt="" class="mobile-logo"
-          /></a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 listitems">
-            <li class="nav-item item-link">
-              <a class="nav-link" aria-current="page" href="/home.html">Home</a>
-            </li>
-            <li class="nav-item item-link">
-              <a class="nav-link" href="#all-products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="quote" href="#contactus">
+  <body style="background-color: #ECE2D6">
+
+    <!-- normal navbar -->
+
+ <nav class="navbar" style="background-color: transparent;">
+          <div class="nav-left">
+            <ul>
+              <li><a href="/">SKIN CARE</a></li>
+              <li><a href="/">HAIR CARE</a></li>
+              <li><a href="/">GIFT PACK</a></li>
+            </ul>
+          </div>
+          <div class="logopart" style="width: 12vw;">
+            <img src="logo new (1).png" alt="" class="navimg" style="width:10vw; height: auto;">
+          </div>
+          <div>
+            <ul class="nav-right">
+              <li><a href="/">HOME</a></li>
+              <li><a href="/">PRODUCT</a></li>
+              <li><a class="quote" href="#contactus">
                 <button class="btn btnn">
-                  Get a Quote
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="25"
-                    height="25"
-                    viewBox="0,0,256,256"
-                  >
+                  GET A QUOTE
+                  
                     <g
                       fill="#ffffff"
                       fill-rule="nonzero"
@@ -90,402 +69,132 @@
                       </g>
                     </g>
                   </svg></button
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+              ></a></li>
+            </ul>
+          </div>
     </nav>
 
+
+
+
+    <!-- mobile navbar -->
+      <nav class="mobile-nav" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">PRODUCT</a></li>
+            <li><a href="/">SKIN CARE</a></li>
+            <li><a href="/">HAIR CARE</a></li>
+            <li><a href="/">GIFT PACK</a></li>
+            
+          </ul>
+        </div>
+      </nav> 
+
+     
+    <!-- main banner -->
     <div class="top">
-      <div class="left text-white">
-        <div class="left-item mt-5">
-          <div class="fs ms-5">
-            <p class="fw-bold">Check Out Now!</p>
-            <p class="fw-bold">Our Latest Products</p>
-          </div>
-          <div class="texts d-flex justify-content-start ms-5">
-            <span class="fw-bold are">are</span>
-            <p class="fs1 text fst-italic">Hair Oil</p>
-            <p class="fs1 text fst-italic">Facewash</p>
-            <p class="fs1 text fst-italic">Hair Cleanser</p>
-            <p class="fs1 text fst-italic">Face Serum</p>
-            <p class="fs1 text fst-italic">Hair Pack</p>
-            <p class="fs1 active text fst-italic">Aloevera Gel</p>
-          </div>
-          <button class="explore-btn ms-5">Explore</button>
-          <div class="d-flex justify-content-around mt-5 fs-3 three-text">
-            <p class="fw-bold">TREAT</p>
-            <p class="fw-bold">MAINTAIN</p>
-            <p class="fw-bold">PROTECT</p>
-          </div>
-        </div>
+      <img src="images/topbanner.png" alt="" class="topbannerimg" style="width: 100%; height: auto; ">
+        
       </div>
-      <div class="right">
-        <div class="container">
-          <div class="scanning-container">
-            <img
-              src="images/aloeveraDark.webp"
-              alt="Aloevera Gel"
-              class="image"
-              loading="lazy"
-              style="object-fit: cover"
-            />
-          </div>
-          <div class="scanning-container">
-            <img
-              src="images/oilDark.webp"
-              alt="Hair Oil"
-              class="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="scanning-container">
-            <img
-              src="images/facewashDark.webp"
-              alt="Facewash"
-              class="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="scanning-container">
-            <img
-              src="images/cleanserDark.webp"
-              alt="Hair Cleanser"
-              class="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="scanning-container">
-            <img
-              src="images/serumDark.webp"
-              alt="Face Serum"
-              class="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="scanning-container">
-            <img
-              src="images/HairPackDark.webp"
-              alt="Hair Pack"
-              class="image"
-              loading="lazy"
-            />
-          </div>
-        </div>
+    <!-- mobile banner -->
+    <div class="top mobiletop">
+      <img src="images/mobilebanner.png" alt="" class="topbannerimg" style="width: 100%; height: auto; ">
+        
+      </div>
+
+    <!-- gif video section -->
+    <div class="card-group" style="margin-top: 1vw;">
+      <div class="card gif-card">
+        <img src="images/gif video/hair care.gif" alt="...">
+        <p>HAIR CARE</p>
+      
+      </div>
+      <div class="card gif-card">
+        <img src="images/gif video/skin care.gif" alt="...">
+          <p>SKIN CARE</p>                   
+      </div>
+      <div class="card gif-card">
+        <img src="images/gif video/facewash.gif" alt="...">
+        <p style=" left: 11vw;">FACEWASH</p>           
       </div>
     </div>
-    <!----------------- Qualities -------------------->
-    <div class="qualities">
-      <img src="images/horizontal-qualities (1).png" alt="" />
-    </div>
-    <!------------------------  ----------------------->
-    <!---------------------MODELS------------------------>
-    <div class="model">
-      <div class="mdl1">
-        <div class="manjishtha">Manjishtha</div>
-        <img
-          src="images/facewashModel.webp"
-          alt=""
-          loading="lazy"
-          class="model1"
-        />
-        <div class="product-container1">
-          <img
-            src="images/facewashcard.webp"
-            alt="Face Pro"
-            class="product1"
-            loading="lazy"
-          />
-          <img
-            src="images/facewashDeatils.webp"
-            alt="Face Pro Hover"
-            class="product1-img2"
-            loading="lazy"
-          />
-        </div>
-      </div>
 
-      <div class="mdl2">
-        <div class="bg"></div>
-        <div class="maintain">Aloevera Gel</div>
+    <!-- Carousel -->
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;AloeveraGel</p>
+          </div>
+          <img src="images/product-slider/aloeveragel.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Face Serum</p>
+          </div>
+          <img src="images/product-slider/faceserum.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Facewash</p>
+          </div>
+          <img src="images/product-slider/facewash.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Cleanser</p>
+          </div>
+          <img src="images/product-slider/haircleanser.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Oil</p>
+          </div>
+          <img src="images/product-slider/hairoil.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="slider-text">
+            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Care</p>
+          </div>
+          <img src="images/product-slider/hairpack.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
 
-        <img
-          src="images/aloeveraModel.webp"
-          alt=""
-          loading="lazy"
-          class="model2"
-        />
-        <div class="product-container2">
-          <img
-            src="images/aloeveracard.webp"
-            alt=""
-            class="product2"
-            loading="lazy"
-          />
-          <img
-            src="images/aloeveradetails.webp"
-            alt=""
-            class="product2-img2"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      <div class="mdl3">
-        <img
-          src="images/serumModel.webp"
-          alt=""
-          loading="lazy"
-          class="model3"
-        />
-        <div class="product-container3">
-          <img
-            src="images/serumcard.webp"
-            alt=""
-            class="product3"
-            loading="lazy"
-          />
-          <img
-            src="images/serumdetails.webp"
-            alt=""
-            class="product3-img2"
-            loading="lazy"
-          />
-        </div>
-        <div class="saffron">Saffron Touch And Glow</div>
-      </div>
-
-      <div class="mdl4">
-        <div class="bg"></div>
-        <img src="images/oilModel.webp" alt="" loading="lazy" class="model4" />
-        <div class="product-container4">
-          <img
-            src="images/oilcard.webp"
-            alt=""
-            class="product4"
-            loading="lazy"
-          />
-          <img
-            src="images/oilDetails.webp"
-            alt=""
-            class="product4-img2"
-            loading="lazy"
-          />
-        </div>
-
-        <div class="jadi">Jadi Booti</div>
-      </div>
-      <div class="mdl5">
-        <img
-          src="images/hairPackModel.webp"
-          alt=""
-          loading="lazy"
-          class="model5"
-        />
-        <div class="product-container5">
-          <img
-            src="images/packCard.webp"
-            alt=""
-            class="product5"
-            loading="lazy"
-          />
-          <img
-            src="images/hairPackDetails.webp"
-            alt=""
-            class="product5-img2"
-            loading="lazy"
-          />
-        </div>
-        <div class="banana">Banana Therapy Regrowth</div>
-      </div>
-      <div class="mdl6">
-        <div class="bg"></div>
-
-        <img
-          src="images/haircleanserModel.webp"
-          alt=""
-          loading="lazy"
-          class="model6"
-        />
-        <div class="product-container6">
-          <img
-            src="images/cleanserCard.webp"
-            alt=""
-            class="product6"
-            loading="lazy"
-          />
-          <img
-            src="images/cleanserdetails.webp"
-            alt=""
-            class="product6-img2"
-            loading="lazy"
-          />
-        </div>
-        <div class="panch">Panch Amrit</div>
-      </div>
-    </div>
-    <!------------------------------------------------------->
-    <!----------------- Features ----------------->
-    <div class="features">
-      <div class="top-heading d-flex justify-content-center fs-2 mb-5">
-        Our Features
-      </div>
-      <div class="upper-feature">
-        <div class="pack">
-          <div class="feature-image"><img src="images/usp.png" alt="" /></div>
-          <div class="feature-text">
-            Our products are packaged with utmost care to ensure they remain
-            fresh and effective. Using eco-friendly materials, we ensure the
-            integrity of our herbal formulations from our facility to your
-            doorstep.
-          </div>
-        </div>
-        <div class="pan">
-          <div class="feature-image">
-            <img src="images/logistics.png" alt="" />
-          </div>
-          <div class="feature-text">
-            We deliver our products across India with speed and reliability. No
-            matter where you are, our efficient delivery network ensures your
-            order reaches you on time.
-          </div>
-        </div>
-        <div class="safety">
-          <div class="feature-image">
-            <img src="images/safety.png" alt="" />
-          </div>
-          <div class="feature-text">
-            Your safety is our priority. We adhere to strict safety standards
-            during the production and packaging processes to ensure that our
-            products are safe and effective for your use.
-          </div>
-        </div>
-      </div>
-      <div class="lower-feature">
-        <div class="quality">
-          <div class="feature-image">
-            <img src="images/quality.png" alt="" />
-          </div>
-          <div class="feature-text">
-            Every product undergoes thorough quality checks at each stage of
-            production. Our commitment to quality ensures you receive only the
-            best herbal products.
-          </div>
-        </div>
-        <div class="private">
-          <div class="feature-image">
-            <img src="images/private label.png " alt="" />
-          </div>
-
-          <div class="feature-text">
-            We offer customizable private labelling options to meet your unique
-            business needs. Partner with us to create your own brand of
-            high-quality herbal products.
-          </div>
-        </div>
-      </div>
-    </div>
-    <!---------------------------  --------------------------->
-    <!---------------------------------------- all Products ------------------------------------------>
-    <div class="all" id="all-products">
-      <div class="nav-tab">
-        <ul class="d-flex justify-content-evenly list-unstyled">
-          <li class="listitem">
-            <a href="#" id="allprods" class="active1">All Products</a>
-          </li>
-          <li class="listitem"><a href="#" id="hairCareLink">Hair Care</a></li>
-          <li class="listitem"><a href="#" id="skinCareLink">Skin Care</a></li>
-        </ul>
-      </div>
-      <div class="category" id="category">
-        <div class="row1">
-          <img
-            src="images/all products/aloe vera card.png"
-            class="desktopcard card1 skincare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/aloe vera jail copy.png"
-            alt=""
-            class="mobilecard card1 skincare"
-          />
-          <img
-            src="images/all products/face wash card.webp"
-            class="desktopcard card1 skincare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/face wash copy.png"
-            alt=""
-            class="mobilecard card1 skincare"
-          />
-          <img
-            src="images/all products/face serum card.webp"
-            class="desktopcard card1 skincare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/face serum2 copy.png"
-            alt=""
-            class="mobilecard card1 skincare"
-          />
-          <img
-            src="images/all products/hair cleanser card.webp"
-            class="desktopcard card1 haircare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/hair cleanser copy.png"
-            alt=""
-            class="mobilecard card1 haircare"
-          />
-          <img
-            src="images/all products/hair pack card.webp"
-            class="desktopcard card1 haircare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/hair pack copy.png"
-            alt=""
-            class="mobilecard card1 haircare"
-          />
-          <img
-            src="images/all products/hair-oil card.webp"
-            class="desktopcard card1 haircare"
-            alt=""
-          />
-          <img
-            src="images/mobile view cards/hair-oil copy.png"
-            alt=""
-            class="mobilecard card1 haircare"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="email d-flex justify-content-around" id="contactus">
-      <div class="text">
-        <p class="fs-1 mb-0">Contact Us</p>
-        <p>
-          *or give us a call for more imformation
-          <span class="fw-bold">+91-8368873556</span>
-        </p>
-      </div>
-      <div class="input-container">
-        <input type="email" placeholder="E-mail address" class="email-input" />
-        <button class="send-button">SEND</button>
-      </div>
-    </div>
-    <div class="collage">
-      <img
-        src="images/collage-horizontal.png"
-        alt=""
-        class="collage-horizontal"
-        draggable="false"
-      />
-      <img src="images/collage vertical.png" alt="" class="collage-vertical" />
-    </div>
-
+    <!-- footer -->
     <div class="footer">
       <div class="foot-logo">
         <hr />
@@ -561,6 +270,11 @@
         </div>
       </div>
     </div>
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsap.js"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -574,6 +288,27 @@
     ></script>
 
     <script>
+      
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.getElementsByClassName('navbar')[0];
+      var navLinks = document.querySelectorAll('.navbar li a');
+      
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          navbar.style.backgroundColor = '#ECE2D6';
+          navLinks.forEach(function(link) {
+            link.style.color = '#513317';
+          });
+        } else {
+          navbar.style.backgroundColor = 'transparent';
+          navLinks.forEach(function(link) {
+            link.style.color = 'white';
+          });
+        }
+      });
+    });
+    
+  
       document.addEventListener("DOMContentLoaded", function () {
         const texts = document.querySelectorAll(".texts p");
         let index = 0;
