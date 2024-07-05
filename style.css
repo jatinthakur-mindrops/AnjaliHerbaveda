@@ -1692,6 +1692,13 @@
   .mobiletop {
     display: block;
   }
+  .card-group {
+    display: flex;
+    justify-content: center;
+  }
+  .gif-card {
+    width: 33%;
+  }
 }
 
 /* Medium Devices (Tablets) */
