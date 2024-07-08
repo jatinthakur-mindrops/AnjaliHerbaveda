@@ -18,21 +18,20 @@
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="icon" href="16x16 copy.png" />
-    <title>Anjali Herbavedic-Home Page</title>
+    <title>Anjali Herbavedic</title>
   </head>
   <body style="background-color: #ECE2D6">
 
     <!-- normal navbar -->
 
- <nav class="navbar" style="background-color: transparent;">
+    <nav class="navbar" style="background-color: transparent;">
           <div class="nav-left">
             <ul>
-              <li><a href="/">SKIN CARE</a></li>
-              <li><a href="/">HAIR CARE</a></li>
-              <li><a href="/">GIFT PACK</a></li>
+              <li><a href="#carouselExampleIndicators">SKIN CARE</a></li>
+              <li><a href="#ladyproduct">HAIR CARE</a></li>
+              <li><a href="#giftpack">GIFT PACK</a></li>
             </ul>
           </div>
           <div class="logopart" style="width: 12vw;">
@@ -40,12 +39,11 @@
           </div>
           <div>
             <ul class="nav-right">
-              <li><a href="/">HOME</a></li>
-              <li><a href="/">PRODUCT</a></li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#carouselExampleIndicators">PRODUCT</a></li>
               <li><a class="quote" href="#contactus">
                 <button class="btn btnn">
                   GET A QUOTE
-                  
                     <g
                       fill="#ffffff"
                       fill-rule="nonzero"
@@ -72,60 +70,61 @@
               ></a></li>
             </ul>
           </div>
-    </nav>
-
-
-
+      </nav>
 
     <!-- mobile navbar -->
-      <nav class="mobile-nav" role="navigation">
+      <nav class="mobile-nav" id="mobilenavbar" role="navigation">
+        
+        <div class="mobilelogo">
+          <img src="logo new (1).png" alt="">
+        </div>
         <div id="menuToggle">
           <input type="checkbox" />
           <span></span>
           <span></span>
           <span></span>
+
           <ul id="menu">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">PRODUCT</a></li>
-            <li><a href="/">SKIN CARE</a></li>
-            <li><a href="/">HAIR CARE</a></li>
-            <li><a href="/">GIFT PACK</a></li>
-            
+            <li><a href="#">HOME</a></li>
+            <li><a href="#mobilecrousel">PRODUCT</a></li>
+            <li><a href="#carouselExampleIndicators">SKIN CARE</a></li>
+            <li><a href="#ladyproduct">HAIR CARE</a></li>
+            <li><a href="#giftpack">GIFT PACK</a></li>
+           
           </ul>
         </div>
       </nav> 
 
-     
     <!-- main banner -->
     <div class="top">
       <img src="images/topbanner.png" alt="" class="topbannerimg" style="width: 100%; height: auto; ">
         
       </div>
     <!-- mobile banner -->
-    <div class="top mobiletop">
+    <div class="top mobiletop" id="mobilebanner">
       <img src="images/mobilebanner.png" alt="" class="topbannerimg" style="width: 100%; height: auto; ">
         
       </div>
 
     <!-- gif video section -->
     <div class="card-group" style="margin-top: 0.5vw;">
-      <div class="card gif-card">
+      <div class="card gif-card" >
         <img src="images/gif video/hair care.gif" alt="...">
-        <p>HAIR CARE</p>
+        <p style="color: white;">HAIR CARE</p>
       
       </div>
       <div class="card gif-card">
-        <img src="images/gif video/skin care.gif" alt="...">
-          <p>SKIN CARE</p>                   
+        <img src="images/gif video/giftpack.gif" alt="...">
+          <p style="color: white;">GIFT PACK</p>                   
       </div>
       <div class="card gif-card">
-        <img src="images/gif video/facewash.gif" alt="...">
-        <p style=" left: 11vw;">FACEWASH</p>           
+        <img src="images/gif video/skin care.gif" alt="...">
+        <p style=" left: 11vw; color: white;">SKIN CARE</p>           
       </div>
     </div>
 
     <!-- Carousel -->
-     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+     <div id="carouselExampleIndicators" class="carousel slide normal-slider" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -137,49 +136,49 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;AloeveraGel</p>
+            <p class="sliderheading">Pure AloeVeraGel</p>
+            <p class="sliderpara">Soothes, hydrates, and heals your skin.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;AloeveraGel</p>
           </div>
           <img src="images/product-slider/aloeveragel.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Face Serum</p>
+            <p class="sliderheading">Radiant Face Serum</p>
+            <p class="sliderpara">Boosts glow and reduces imperfections.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Face Serum</p>
           </div>
           <img src="images/product-slider/faceserum.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Facewash</p>
+            <p class="sliderheading">Refreshing FaceWash</p>
+            <p class="sliderpara">Cleanses deeply for a fresh complexion.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Facewash</p>
           </div>
           <img src="images/product-slider/facewash.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Cleanser</p>
+            <p class="sliderheading">Nourishing Hair Cleanser</p>
+            <p class="sliderpara">Gentle formula for shiny, healthy hair.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Cleanser</p>
           </div>
           <img src="images/product-slider/haircleanser.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Oil</p>
+            <p class="sliderheading">Revitalizing Hair Oil</p>
+            <p class="sliderpara">Deep nourishment for strong, lustrous locks.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Oil</p>
           </div>
           <img src="images/product-slider/hairoil.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="slider-text">
-            <p class="sliderheading">DISCOVER OUR ROUTINES </p>
-            <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
-            <p class="slidername"><i class="fa-solid fa-circle" style="color: #ffffff;"></i>&nbsp;Hair Care</p>
+            <p class="sliderheading">Complete Hair Care</p>
+            <p class="sliderpara">Your ultimate solution for perfect hair.</p>
+            <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Care</p>
           </div>
           <img src="images/product-slider/hairpack.png" class="d-block w-100" alt="...">
         </div>
@@ -193,6 +192,160 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div> 
+
+    <!-- mobile Carousel -->
+    <div id="mobilecrousel" class="carousel slide mobile-slider" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Pure AloeVeraGel</p>
+            <p class="mobile-sliderpara">Soothes, hydrates, and heals your skin.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;AloeveraGel</p>
+          </div>
+          <img src="images/mobile-slider/aloevera gel mobile.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Radiant Face Serum</p>
+            <p class="mobile-sliderpara">Boosts glow and reduces imperfections.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Face Serum</p>
+          </div>
+          <img src="images/mobile-slider/face-serum mobile.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Complete Hair Care</p>
+            <p class="mobile-sliderpara">Your ultimate solution for perfect hair.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Care</p>
+          </div>
+          <img src="images/mobile-slider/hair pack copy.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Refreshing FaceWash</p>
+            <p class="mobile-sliderpara">Cleanses deeply for a fresh complexion.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Facewash</p>
+          </div>
+          <img src="images/mobile-slider/face-wash mobile.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Nourishing Hair Cleanser</p>
+            <p class="mobile-sliderpara">Gentle formula for shiny, healthy hair.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair-cleanser</p>
+          </div>
+          <img src="images/mobile-slider/hair-cleanser mobile.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="mobile-slider-text">
+            <p class="mobile-sliderheading">Revitalizing Hair Oil</p>
+            <p class="mobile-sliderpara">Deep nourishment for strong, lustrous locks.</p>
+            <p class="mobile-slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Oil</p>
+          </div>
+          <img src="images/mobile-slider/jadi-booti hare oil mobile.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- giftack section -->
+     <div class="giftpack" id="giftpack">
+      <div class="gift-class">
+        <div class="gifttext">
+          <h3>Gifts That Show You Care</h3> <br>
+          <p>Give the gift of self-care with premium quality sets.</p><br>
+          <p><i class="fa-solid fa-circle" style="color: black;"></i>&nbsp;&nbsp;SHOP GIFTING</p>
+        </div>
+      </div>
+         <div class="giftcard" >
+          <img src="images/giftpack/gift-pack1.png" class="card-img-top" alt="..." ></div>
+        <div class="giftcard" >
+          <img src="images/giftpack/gift-pack2.png" class="card-img-top" alt="..." style="margin-left: 1vw;"></div>
+      </div>
+
+      <!-- product-lady section -->
+      <div id="ladyproduct" class="carousel slide normal-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- <div class="slider-text">
+              <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+              <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+              <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;AloeveraGel</p>
+            </div> -->
+            <img src="images/product-lady/alovera gel.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="slider-text">
+              <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+              <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+              <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Face Serum</p>
+            </div> -->
+            <img src="images/product-lady/face serum.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="slider-text">
+              <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+              <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+              <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Facewash</p>
+            </div> -->
+            <img src="images/product-lady/facewash.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="slider-text">
+              <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+              <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+              <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Cleanser</p>
+            </div> -->
+            <img src="images/product-lady/hair cleanser.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="slider-text">
+              <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+              <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+              <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Oil</p>
+            </div> -->
+            <img src="images/product-lady/hair pack.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <!-- <div class="slider-text">
+                <p class="sliderheading">DISCOVER OUR ROUTINES </p>
+                <p class="sliderpara"> Simplify skincare with our CHP <br> routines.</p>
+                <p class="slidername"><i class="fa-solid fa-circle" style="color: #feecd4;"></i>&nbsp;Hair Care</p>
+              </div> -->
+            <img src="images/product-lady/hair-oil.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
 
     <!-- footer -->
     <div class="footer">
@@ -209,7 +362,7 @@
           <p class="text-white">INDUSTRIAL AREA, DELHI-110039,</p>
           <p class="text-white">INDIA</p>
           <p class="text-white">+91-8368873556</p>
-          <p class="text-white">info@anjaliherbavedic.com</p>
+          <p mailto:class="text-white">info@anjaliherbavedic.com</p>
           <div class="socials">
             <p>
               <a
@@ -275,6 +428,7 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -307,6 +461,26 @@
         }
       });
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobnav = document.getElementById('mobilenavbar');
+      
+      
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          mobnav.style.backgroundColor = '#ECE2D6';
+          navLinks.forEach(function(link) {
+            link.style.color = '#513317';
+          });
+        } else {
+          mobnav.style.backgroundColor = 'transparent';
+          navLinks.forEach(function(link) {
+            link.style.color = 'white';
+          });
+        }
+      });
+    });
+    
     
   
       document.addEventListener("DOMContentLoaded", function () {
