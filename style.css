@@ -290,7 +290,7 @@
   opacity: 0.55s ease;
 }
 .officeadd{
-  width: 25%;
+  width: 19vw;
 }
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
@@ -1098,6 +1098,7 @@
   padding-top: 10vh;
   height: auto;
   background-color: #000;
+  /* width: 100vw; */
 }
 
 .foot-logo {
@@ -1137,7 +1138,7 @@
 }
 
 .poproducts {
-  width: 50%;
+  width: 40%;
   padding-left: 11vw;
 }
 
@@ -1167,10 +1168,12 @@
 }
 
 .socials {
-  margin-top: 3vh;
+  /* margin-top: 3vh; */
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-right: 38vw;
+  padding-top: 2vw;
 }
 
 .socials p {
@@ -1443,15 +1446,14 @@
     padding-top: 5vh;
   }
   .footer h3{
-    width: 100vw;
+    width: 80vw;
     text-align: center;
-    padding-left: 0;
+    /* padding-left: 23vw; */
   }
-  .contact-info{
-    width: 100%;
-    margin-bottom: 3vh;
-    flex-direction: column;
-  } 
+  .socials{
+    text-align: center;
+    padding-right: 1vw;
+  }
   .officeadd{
     width: 100%;
   }
@@ -1516,9 +1518,13 @@
     padding-top: 5vh;
   }
   .footer h3{
-    width: 100vw;
+    width: 80vw;
     text-align: center;
-    padding-left: 0;
+    /* padding-left: 23vw; */
+  }
+  .socials{
+    text-align: center;
+    padding-right: 1vw;
   }
   .contact-info{
     width: 100%;
@@ -1531,6 +1537,7 @@
   .poproducts{
     width: 90vw;
   }
+
 }
 @media (max-width: 320px){
   .giftpack{
@@ -1558,6 +1565,15 @@
   
   .mb-lady-section{
     display: block;
+  }
+  .footer h3{
+    width: 80vw;
+    text-align: center;
+    /* padding-left: 23vw; */
+  }
+  .socials{
+    text-align: center;
+    padding-right: 1vw;
   }
 }
 @media (min-width: 376px) and (max-width: 424px) {
@@ -1613,6 +1629,8 @@
     display: block;
   }
   .footer-sections{
+    width: 100vw;
+    align-items: self-start;
     justify-content: space-between;
     padding-top: 5vh;
   }
@@ -1621,7 +1639,7 @@
     text-align: center;
   }
   .contact-info{
-    width: 100%;
+    width: 60%;
     /* margin-bottom: 3vh; */
     flex-direction: column;
   } 
@@ -1630,6 +1648,15 @@
   }
   .poproducts{
     width: 90vw;
+  }
+  .footer h3{
+    width: 80vw;
+    text-align: center;
+    /* padding-left: 23vw; */
+  }
+  .socials{
+    text-align: center;
+    padding-right: 1vw;
   }
 }
 @media (min-width: 425px) and (max-width: 599px) {
@@ -1702,6 +1729,15 @@
   }
   .poproducts{
     width: 90vw;
+  }
+  .footer h3{
+    width: 80vw;
+    text-align: center;
+    /* padding-left: 23vw; */
+  }
+  .socials{
+    text-align: center;
+    padding-right: 1vw;
   }
 }
 @media (min-width: 599px) {
