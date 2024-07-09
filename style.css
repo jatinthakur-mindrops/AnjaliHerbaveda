@@ -1302,10 +1302,12 @@
     padding-top: 2vh;
   }
 
-  .contact-info {
+  /* .contact-info {
     width: 100%;
     margin-bottom: 3vh;
-  }
+    flex-wrap: wrap;
+
+  } */
 
   .pro-heading {
     display: block;
@@ -1530,6 +1532,7 @@
     width: 100%;
     /* margin-bottom: 3vh; */
     flex-direction: column;
+    flex-wrap: wrap;
   } 
   .officeadd{
     width: 100%;
@@ -1639,9 +1642,10 @@
     text-align: center;
   }
   .contact-info{
-    width: 60%;
+    width: 100vw;
     /* margin-bottom: 3vh; */
     flex-direction: column;
+    flex-wrap: wrap;
   } 
   .officeadd{
     width: 100%;
@@ -1717,12 +1721,13 @@
   .footer h3{
     width: 80vw;
     text-align: center;
-    padding-left: 0;
+    padding-left: 23vw;
   }
   .contact-info{
     width: 100%;
     /* margin-bottom: 2vh; */
     flex-direction: column;
+    flex-wrap: wrap;
   } 
   .officeadd{
     width: 100%;
