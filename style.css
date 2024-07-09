@@ -823,19 +823,24 @@
   padding-left: 1vw;
 }
 .mobileslidericon{
-
+  padding-top: 4vw;
+  padding-left: 1vw;
+}
+.mobileslidericon{
+  padding-left: 1vw;
+  padding-top: 0vw;
 }
 .mobileslidericon img{
-  padding-top: 15vw;
-    width: 23vw;
-    padding-left: 3vw;
+  padding-top: 2vw;
+  width: 23vw;
+  padding-left: 1vw;
     
 }
 .slidericon img{
   width: 6vw;
 }
 .mobileslidericon img{
-  width: 20vw;
+  width: 9vw;
 }
 .upper-feature,
 .lower-feature {
