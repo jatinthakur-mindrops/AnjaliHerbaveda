@@ -834,6 +834,9 @@
 .slidericon img{
   width: 6vw;
 }
+.mobileslidericon img{
+  width: 20vw;
+}
 .upper-feature,
 .lower-feature {
   margin-bottom: 2rem;
