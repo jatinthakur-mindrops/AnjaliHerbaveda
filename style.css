@@ -1514,7 +1514,7 @@
   }
   .contact-info{
     width: 100%;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
     flex-direction: column;
   } 
   .officeadd{
@@ -1614,7 +1614,7 @@
   }
   .contact-info{
     width: 100%;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
     flex-direction: column;
   } 
   .officeadd{
