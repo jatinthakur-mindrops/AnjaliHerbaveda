@@ -1686,7 +1686,7 @@
   }
   .contact-info{
     width: 100%;
-    margin-bottom: 3vh;
+    /* margin-bottom: 2vh; */
     flex-direction: column;
   } 
   .officeadd{
